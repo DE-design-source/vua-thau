@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="vi"><head><script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js": "/assets/90e3066b.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "/assets/7daabdf8.js"};</script><title>Vua Thầu – Xây nhà an tâm. Chọn thầu dễ dàng.</title><meta name="description" content="Gửi nhu cầu xây nhà phố, biệt thự, cải tạo hoặc hoàn thiện – Vua Thầu sàng lọc và kết nối bạn với nhà thầu đã qua xét duyệt để so sánh phương án minh bạch.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/assets/9a6aa8ab.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/f0f04ac3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/4c44bdd0.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/0c8de26e.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/b86ed35e.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/a59c0b3e.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/cbdb77e6.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/3322ca83.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/ba451c7c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/f0f04ac3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/4c44bdd0.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/0c8de26e.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/b86ed35e.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/a59c0b3e.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/cbdb77e6.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/3322ca83.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/ba451c7c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/f0f04ac3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/4c44bdd0.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/0c8de26e.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/b86ed35e.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/a59c0b3e.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/cbdb77e6.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/3322ca83.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/ba451c7c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/f0f04ac3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/4c44bdd0.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/0c8de26e.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/b86ed35e.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/a59c0b3e.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/cbdb77e6.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/3322ca83.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/assets/ba451c7c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<script src="/assets/60a389ad.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Noto Sans',system-ui,sans-serif;color:#222222;background:#FFFFFF;-webkit-font-smoothing:antialiased}
+a{color:#001C33;text-decoration:none}
+a:hover{color:#001C33;text-decoration:underline}
+*:focus-visible{outline:3px solid #FFB51C;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans',system-ui,sans-serif;color:#222222;background:#FFFFFF">
+
+<!-- 1. HEADER -->
+<header style="position:sticky;top:0;z-index:50;background:#05243E;border-bottom:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px);height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#top" aria-label="Vua Thầu — Trang chủ" style="display:flex;align-items:center;flex-shrink:0">
+      <img src="/assets/ae7bdbf0.png" alt="Vua Thầu — Một yêu cầu, nhiều nhà thầu" style="height:36px;width:auto;display:block">
+    </a>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="Điều hướng chính" style="display:flex;align-items:center;gap:28px">
+        <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
+          <a href="{{ n.href }}" style="color:#FFFFFF;font-size:15px;font-weight:500;white-space:nowrap" style-hover="color:#FFB51C;text-decoration:none">{{ n.label }}</a>
+        </sc-for>
+      </nav>
+    </sc-if>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="#bao-gia" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:#FFB51C;color:#001C33;font-weight:600;font-size:15px;border-radius:4px;white-space:nowrap" style-hover="background:#FFC547;text-decoration:none;color:#001C33">{{ ctaShort }}</a>
+      <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+        <button sc-camel-on-click="{{ toggleMenu }}" aria-label="Mở menu" aria-expanded="{{ menuOpen }}" style="width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:4px;cursor:pointer">
+          <span style="width:20px;height:2px;background:#FFFFFF"></span>
+          <span style="width:20px;height:2px;background:#FFFFFF"></span>
+          <span style="width:20px;height:2px;background:#FFFFFF"></span>
+        </button>
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ showMobileMenu }}" hint-placeholder-val="{{ false }}">
+    <nav aria-label="Menu di động" style="background:#05243E;border-top:1px solid rgba(255,255,255,.1);padding:8px 20px 20px;display:flex;flex-direction:column">
+      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
+        <a href="{{ n.href }}" sc-camel-on-click="{{ closeMenu }}" style="color:#FFFFFF;font-size:16px;font-weight:500;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)">{{ n.label }}</a>
+      </sc-for>
+    </nav>
+  </sc-if>
+</header>
+
+<main id="top">
+
+<!-- 1b. COVER BANNER -->
+<section aria-label="Vua Thầu – Kết nối chủ nhà và nhà thầu uy tín" style="background:#001C33;line-height:0">
+  <img src="/assets/d221322a.png" alt="Vua Thầu – Kết nối chủ nhà và nhà thầu uy tín. Gửi nhu cầu, nhận báo giá, gặp nhà thầu." style="display:block;width:100%;height:auto;max-width:1862px;margin:0 auto">
+</section>
+
+<!-- 2. HERO -->
+<section aria-labelledby="hero-title" style="background:#001C33;color:#FFFFFF;overflow:hidden">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:clamp(32px,5vw,64px);align-items:center">
+    <div style="position:relative;z-index:1;display:flex;flex-direction:column;gap:24px">
+      <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:.24em;color:#FFB51C">MỘT YÊU CẦU, NHIỀU NHÀ THẦU</p>
+      <h1 id="hero-title" style="margin:0;font-size:clamp(30px,4.4vw,52px);font-weight:600;line-height:1.18;letter-spacing:-.01em;text-wrap:balance">Xây nhà an tâm.<br>Chọn thầu dễ dàng.</h1>
+      <p style="margin:0;font-size:18px;line-height:1.55;color:#D5DCE3;max-width:520px;text-wrap:pretty">Gửi một yêu cầu cho công trình nhà cấp 4, nhà phố hay biệt thự — xây mới, cải tạo hoặc hoàn thiện. Vua Thầu sàng lọc và kết nối bạn với nhà thầu phù hợp để so sánh phương án minh bạch.</p>
+
+      <form sc-camel-on-submit="{{ submitHero }}" aria-label="Bắt đầu yêu cầu báo giá" style="background:#FFB51C;border-radius:8px;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:12px;margin-top:8px">
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#001C33">Hạng mục
+          <sc-raw-select value="{{ heroService }}" sc-camel-on-change="{{ setHeroService }}" style="height:48px;border:1px solid #D1D1D1;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;background:#FFFFFF">
+            <sc-for list="{{ services }}" as="s" hint-placeholder-count="6"><option value="{{ s.title }}">{{ s.title }}</option></sc-for>
+          </sc-raw-select>
+        </label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#001C33">Loại công trình
+          <sc-raw-select value="{{ heroType }}" sc-camel-on-change="{{ setHeroType }}" style="height:48px;border:1px solid #D1D1D1;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;background:#FFFFFF">
+            <sc-for list="{{ buildingTypes }}" as="b" hint-placeholder-count="6"><option value="{{ b }}">{{ b }}</option></sc-for>
+          </sc-raw-select>
+        </label>
+        <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#001C33">Tỉnh / Thành phố
+          <input value="{{ heroCity }}" sc-camel-on-change="{{ setHeroCity }}" placeholder="VD: TP. Hồ Chí Minh" style="height:48px;border:1px solid #D1D1D1;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;box-sizing:border-box">
+        </label>
+        <button type="submit" style="grid-column:1/-1;min-height:56px;background:#001C33;color:#FFFFFF;border:none;border-radius:4px;font:inherit;font-size:17px;font-weight:600;cursor:pointer" style-hover="background:#0A3354">{{ ctaPrimary }}</button>
+      </form>
+      <a href="#uoc-tinh" style="color:#FFFFFF;font-size:15px;font-weight:500;text-decoration:underline;text-underline-offset:4px;align-self:flex-start" style-hover="color:#FFB51C">Hoặc ước tính chi phí sơ bộ →</a>
+    </div>
+    <div style="position:relative;z-index:0;aspect-ratio:4/5;max-height:640px;width:135%;margin-left:-35%;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 45%,#000 82%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 16%,#000 80%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,#000 45%,#000 82%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 16%,#000 80%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect">
+      <img src="/assets/83a46b5f.webp" alt="" fetchpriority="high" style="display:block;width:100%;height:100%;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section id="dich-vu" aria-labelledby="svc-title" style="padding:clamp(48px,6vw,80px) 0;background:#FFFFFF">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:40px">
+      <div style="max-width:820px">
+        <h2 id="svc-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:700;line-height:1.2;color:#001C33">Nền tảng kết nối dịch vụ xây dựng</h2>
+        <p style="margin:0;font-size:17px;line-height:1.5;color:#555E68">Công trình nhà ở quy mô, thiết kế, xây nhà trọn gói và hoàn thiện công trình.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:24px">
+      <sc-for list="{{ services }}" as="s" hint-placeholder-count="6">
+        <a href="#dich-vu" style="display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #D1D1D1;border-radius:8px;overflow:hidden;color:#001C33" style-hover="text-decoration:none;border-color:#001C33;box-shadow:0 4px 4px rgba(0,0,0,.08),0 8px 12px rgba(0,0,0,.04)">
+          
+          <div style="padding:28px;display:flex;flex-direction:column;gap:10px;height:100%;box-sizing:border-box">
+            <div style="display:flex;margin-bottom:12px">
+              <svg sc-camel-view-box="0 0 48 48" width="72" height="72" fill="none" stroke="#E0A000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{ s.icon }}"></path></svg>
+            </div>
+            <h3 style="margin:0;font-size:24px;font-weight:600;line-height:1.3">{{ s.title }}</h3>
+            <p style="margin:0;font-size:15px;line-height:1.5;color:#555E68;text-wrap:pretty">{{ s.desc }}</p>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PAIN POINTS -->
+<section aria-labelledby="pain-title" style="padding:clamp(56px,7vw,96px) 0;background:#FFFFFF">
+  <div style="max-width:1100px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:flex;flex-direction:column;align-items:center;gap:clamp(32px,4vw,48px)">
+    <div style="max-width:620px;text-align:center;display:flex;flex-direction:column;gap:12px">
+      <h2 id="pain-title" style="margin:0;font-size:clamp(28px,3.4vw,44px);font-weight:700;line-height:1.2;color:#001C33;text-wrap:balance">Bạn có đang gặp những băn khoăn này?</h2>
+      <p style="margin:0;font-size:17px;line-height:1.55;color:#555E68;text-wrap:pretty">Nếu bạn có dù chỉ một trong những băn khoăn sau, hãy để Vua Thầu kết nối bạn với nhà thầu phù hợp.</p>
+    </div>
+    <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:14px 16px;max-width:1000px">
+      <sc-for list="{{ pains }}" as="p" hint-placeholder-count="8">
+        <li style="background:#F3F5F7;border-radius:999px;padding:14px 24px;font-size:clamp(15px,1.5vw,18px);font-weight:600;line-height:1.4;color:#001C33;text-align:center" style-hover="background:#FFF4DC">“{{ p }}”</li>
+      </sc-for>
+    </ul>
+    <a href="#bao-gia" style="display:inline-flex;align-items:center;min-height:52px;padding:0 28px;background:#FFB51C;color:#001C33;border-radius:4px;font-size:16px;font-weight:600" style-hover="background:#F5A800;text-decoration:none">Gửi nhu cầu xây nhà →</a>
+  </div>
+</section>
+
+<!-- 5b. COMPARISON -->
+<section aria-labelledby="cmp-title" style="padding:clamp(56px,7vw,96px) 0;background:#F3F5F7">
+  <div style="max-width:1000px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:flex;flex-direction:column;gap:clamp(28px,4vw,40px)">
+    <div style="text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center">
+      <h2 id="cmp-title" style="margin:0;font-size:clamp(28px,3.4vw,44px);font-weight:700;line-height:1.2;color:#001C33;text-wrap:balance">Tự tìm nhà thầu hay qua Vua Thầu?</h2>
+      <p style="margin:0;max-width:600px;font-size:17px;line-height:1.55;color:#555E68;text-wrap:pretty">Cùng một mục tiêu xây nhà, nhưng hành trình rất khác nhau.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px">
+      <div style="background:#FFFFFF;border:1px solid #D1D1D1;border-radius:8px;padding:28px;display:flex;flex-direction:column;gap:20px">
+        <h3 style="margin:0;font-size:20px;font-weight:600;color:#555E68">Tự tìm nhà thầu</h3>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#555E68">Thông tin nhà thầu</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#222222"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#9AA3AD" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M6 6l12 12M18 6L6 18"></path></svg>Tự tìm qua mạng, khó kiểm chứng</span></li>
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid #E6E8EB"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#555E68">Báo giá</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#222222"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#9AA3AD" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M6 6l12 12M18 6L6 18"></path></svg>Mỗi nơi một kiểu, khó so sánh</span></li>
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid #E6E8EB"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#555E68">Thời gian</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#222222"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#9AA3AD" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M6 6l12 12M18 6L6 18"></path></svg>Liên hệ, hẹn gặp từng nơi</span></li>
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid #E6E8EB"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#555E68">Hợp đồng</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#222222"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#9AA3AD" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M6 6l12 12M18 6L6 18"></path></svg>Tự soạn hoặc theo mẫu nhà thầu</span></li>
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid #E6E8EB"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#555E68">Khi có vướng mắc</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#222222"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#9AA3AD" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M6 6l12 12M18 6L6 18"></path></svg>Tự xử lý với nhà thầu</span></li>
+        </ul>
+      </div>
+      <div style="background:#FFB51C;border:2px solid #FFB51C;border-radius:8px;padding:28px;display:flex;flex-direction:column;gap:20px;color:#001C33">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><h3 style="margin:0;font-size:20px;font-weight:600;color:#001C33">Qua Vua Thầu</h3><span style="font-size:12px;font-weight:600;color:#FFFFFF;background:#001C33;padding:4px 10px;border-radius:999px">Khuyên dùng</span></div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#001C33;opacity:.75">Thông tin nhà thầu</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#001C33"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#001C33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M4 12l5 5L20 6"></path></svg>Hồ sơ đã thẩm định pháp lý và năng lực</span></li>
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid rgba(0,28,51,.18)"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#001C33;opacity:.75">Báo giá</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#001C33"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#001C33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M4 12l5 5L20 6"></path></svg>Bóc tách theo hạng mục, dễ đối chiếu</span></li>
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid rgba(0,28,51,.18)"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#001C33;opacity:.75">Thời gian</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#001C33"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#001C33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M4 12l5 5L20 6"></path></svg>Gửi nhu cầu một lần, nhận đề xuất phù hợp</span></li>
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid rgba(0,28,51,.18)"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#001C33;opacity:.75">Hợp đồng</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#001C33"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#001C33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M4 12l5 5L20 6"></path></svg>Có hợp đồng mẫu tham khảo, điều khoản rõ ràng</span></li>
+          <li style="display:flex;flex-direction:column;gap:4px;padding:14px 0;border-top:1px solid rgba(0,28,51,.18)"><span style="font-size:13px;font-weight:600;letter-spacing:.04em;color:#001C33;opacity:.75">Khi có vướng mắc</span><span style="display:flex;gap:10px;font-size:15px;line-height:1.5;color:#001C33"><svg sc-camel-view-box="0 0 24 24" width="18" height="18" fill="none" stroke="#001C33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;margin-top:2px"><path d="M4 12l5 5L20 6"></path></svg>Vua Thầu hỗ trợ trao đổi, làm rõ</span></li>
+        </ul>
+        <a href="#bao-gia" style="align-self:flex-start;display:inline-flex;align-items:center;min-height:52px;padding:0 24px;background:#001C33;color:#FFFFFF;border-radius:4px;font-size:16px;font-weight:600" style-hover="background:#0A3354;text-decoration:none;color:#FFFFFF">Gửi nhu cầu →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. HOW IT WORKS -->
+<section id="quy-trinh" aria-labelledby="how-title" style="padding:clamp(48px,6vw,80px) 0;background:#FFFFFF;color:#001C33">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <h2 id="how-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:700;line-height:1.2">Một yêu cầu, ba bước</h2>
+    <p style="margin:0 0 clamp(32px,4vw,48px);font-size:17px;color:#555E68;max-width:600px">Bạn mô tả công trình một lần. Chúng tôi làm phần sàng lọc.</p>
+
+    
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px">
+        <sc-for list="{{ steps }}" as="st" hint-placeholder-count="3">
+          <div style="border-top:3px solid #FFB51C;padding-top:24px;display:flex;flex-direction:column;gap:12px">
+            <span style="font-size:40px;font-weight:600;line-height:1;color:#E0A000">{{ st.no }}</span>
+            <h3 style="margin:0;font-size:22px;font-weight:600">{{ st.title }}</h3>
+            <p style="margin:0;font-size:16px;line-height:1.55;color:#555E68;text-wrap:pretty">{{ st.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+      
+  </div>
+</section>
+
+<!-- 7. CRITERIA -->
+<section aria-labelledby="crit-title" style="padding:clamp(48px,6vw,64px) 0;background:#FFFFFF">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <h2 id="crit-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:700;line-height:1.2;color:#001C33">Tiêu chí ghép nhà thầu</h2>
+    <p style="margin:0 0 40px;font-size:17px;color:#555E68;max-width:640px">Mỗi yêu cầu được đối chiếu với hồ sơ năng lực, không phải theo thứ tự đăng ký.</p>
+    <div style="display:grid;grid-template-columns:{{ critCols }};gap:24px">
+      <sc-for list="{{ criteria }}" as="c" hint-placeholder-count="4">
+        <div style="background:#F5F5F5;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:8px">
+          <span style="width:32px;height:4px;background:#FFB51C;border-radius:2px"></span>
+          <h3 style="margin:8px 0 0;font-size:18px;font-weight:600;color:#001C33">{{ c.title }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.5;color:#222222">{{ c.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 7b. VERIFIED PARTNERS -->
+<section aria-labelledby="trust-title" style="padding:clamp(56px,7vw,96px) 0;background:#001C33 url(&quot;assets/cb238826.png&quot;) center/cover no-repeat;color:#FFFFFF">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,80px);align-items:center">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <h2 id="trust-title" style="margin:0;font-size:clamp(28px,3.4vw,44px);font-weight:700;line-height:1.2;color:#FFFFFF;text-wrap:balance">Chỉ giới thiệu nhà thầu đã qua xét duyệt</h2>
+        <p style="margin:0;font-size:17px;line-height:1.6;color:#E3EAF2;text-wrap:pretty">Mỗi nhà thầu trên Vua Thầu đều phải đi qua 3 lớp kiểm tra trước khi được giới thiệu tới gia chủ.</p>
+      </div>
+      <ol style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+        <li style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;position:relative;padding-bottom:32px">
+          <span aria-hidden="true" style="position:absolute;left:27px;top:56px;bottom:0;border-left:2px dashed rgba(255,255,255,.35)"></span>
+          <div style="width:56px;height:56px;border-radius:999px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;position:relative"><svg sc-camel-view-box="0 0 48 48" width="28" height="28" fill="none" stroke="#FFB51C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M27 6H12v36h12M27 6l8 8v9M27 6v8h8M17 22h10M17 28h6M28 35a7 7 0 1 0 14 0a7 7 0 1 0 -14 0M32 35h6M35 32l3 3-3 3"></path></svg></div>
+          <div style="display:flex;flex-direction:column;gap:6px;padding-top:4px">
+            <span style="font-size:13px;font-weight:600;letter-spacing:.08em;color:#FFB51C">BƯỚC 01</span>
+            <h3 style="margin:0;font-size:19px;font-weight:600;color:#FFFFFF">Tiếp nhận đăng ký</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:#E3EAF2">Nhà thầu gửi thông tin doanh nghiệp, khu vực hoạt động và lĩnh vực thi công.</p>
+          </div>
+        </li>
+        <li style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;position:relative;padding-bottom:32px">
+          <span aria-hidden="true" style="position:absolute;left:27px;top:56px;bottom:0;border-left:2px dashed rgba(255,255,255,.35)"></span>
+          <div style="width:56px;height:56px;border-radius:999px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;position:relative"><svg sc-camel-view-box="0 0 48 48" width="28" height="28" fill="none" stroke="#FFB51C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M27 6H12v36h12M27 6l8 8v9M27 6v8h8M17 21h10M17 27h6M28 35a7 7 0 1 0 14 0a7 7 0 1 0 -14 0M32 35l2 2 4-4"></path></svg></div>
+          <div style="display:flex;flex-direction:column;gap:6px;padding-top:4px">
+            <span style="font-size:13px;font-weight:600;letter-spacing:.08em;color:#FFB51C">BƯỚC 02</span>
+            <h3 style="margin:0;font-size:19px;font-weight:600;color:#FFFFFF">Thẩm định pháp lý &amp; năng lực</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:#E3EAF2">Kiểm tra đăng ký kinh doanh, chứng chỉ hành nghề và hồ sơ năng lực.</p>
+          </div>
+        </li>
+        <li style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:20px;position:relative;padding-bottom:0">
+          
+          <div style="width:56px;height:56px;border-radius:999px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;position:relative"><svg sc-camel-view-box="0 0 48 48" width="28" height="28" fill="none" stroke="#FFB51C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17a5 5 0 1 0 10 0a5 5 0 1 0 -10 0M28 17a5 5 0 1 0 10 0a5 5 0 1 0 -10 0M5 38a10 10 0 0 1 20 0M23 38a10 10 0 0 1 20 0"></path></svg></div>
+          <div style="display:flex;flex-direction:column;gap:6px;padding-top:4px">
+            <span style="font-size:13px;font-weight:600;letter-spacing:.08em;color:#FFB51C">BƯỚC 03</span>
+            <h3 style="margin:0;font-size:19px;font-weight:600;color:#FFFFFF">Gặp mặt &amp; khảo sát công trình</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:#E3EAF2">Trao đổi trực tiếp và xem công trình thực tế trước khi phê duyệt.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div style="background:rgba(0,28,51,.72);border:1px solid rgba(255,255,255,.14);color:#FFFFFF;border-radius:8px;padding:clamp(32px,4vw,48px);display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;align-items:center;gap:16px">
+        <svg sc-camel-view-box="0 0 48 48" width="56" height="56" fill="none" stroke="#FFB51C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5l16 6v12c0 10-7 17-16 20C15 40 8 33 8 23V11z"></path><path d="M17 24l5 5 9-10"></path></svg>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <span style="font-size:13px;font-weight:600;letter-spacing:.12em;color:#FFB51C">KẾT QUẢ</span>
+          <span style="font-size:22px;font-weight:600;line-height:1.3">Đối tác được xác minh</span>
+        </div>
+      </div>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;border-top:1px solid rgba(255,255,255,.12);padding-top:24px">
+        <li style="display:flex;gap:12px;font-size:16px;line-height:1.5;color:#D5DCE3"><span style="color:#FFB51C;font-weight:700">✓</span>Pháp lý doanh nghiệp rõ ràng</li>
+        <li style="display:flex;gap:12px;font-size:16px;line-height:1.5;color:#D5DCE3"><span style="color:#FFB51C;font-weight:700">✓</span>Công trình thực tế kiểm chứng được</li>
+        <li style="display:flex;gap:12px;font-size:16px;line-height:1.5;color:#D5DCE3"><span style="color:#FFB51C;font-weight:700">✓</span>Khu vực và hạng mục thi công phù hợp</li>
+        <li style="display:flex;gap:12px;font-size:16px;line-height:1.5;color:#D5DCE3"><span style="color:#FFB51C;font-weight:700">✓</span>Phản hồi của gia chủ được ghi nhận sau mỗi công trình</li>
+      </ul>
+      <a href="#nha-thau" style="align-self:flex-start;display:inline-flex;align-items:center;min-height:52px;padding:0 24px;background:#FFB51C;color:#001C33;border-radius:4px;font-size:16px;font-weight:600" style-hover="background:#F5A800;text-decoration:none">Xem nhà thầu đối tác →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7c. HOMEOWNER PROTECTION -->
+<section aria-labelledby="prot-title" style="padding:clamp(56px,7vw,96px) 0;background:#FFFFFF">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:flex;flex-direction:column;gap:clamp(32px,4vw,48px)">
+    <div style="max-width:680px;display:flex;flex-direction:column;gap:12px">
+      <h2 id="prot-title" style="margin:0;font-size:clamp(28px,3.4vw,44px);font-weight:700;line-height:1.2;color:#001C33;text-wrap:balance">Quyền lợi của chủ nhà được đặt lên trước</h2>
+      <p style="margin:0;font-size:17px;line-height:1.55;color:#555E68;text-wrap:pretty">Xây nhà là khoản đầu tư lớn. Vua Thầu đồng hành để mỗi bước đều rõ ràng, có căn cứ và được kiểm soát.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:0;border-top:1px solid #D1D1D1">
+      <div style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:18px;padding:28px 24px 28px 0;border-bottom:1px solid #D1D1D1">
+        <svg sc-camel-view-box="0 0 48 48" width="44" height="44" fill="none" stroke="#E0A000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M27 6H12v36h24V15zM27 6v9h9M17 22h14M17 28h14M17 34h8"></path></svg>
+        <div style="display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font-size:19px;font-weight:600;color:#001C33">Hợp đồng mẫu minh bạch</h3><p style="margin:0;font-size:15px;line-height:1.55;color:#222222">Cung cấp hợp đồng mẫu tham khảo với phạm vi công việc, tiến độ, vật tư và điều khoản thanh toán rõ ràng.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:18px;padding:28px 24px 28px 0;border-bottom:1px solid #D1D1D1">
+        <svg sc-camel-view-box="0 0 48 48" width="44" height="44" fill="none" stroke="#E0A000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 40h36M10 40V30h8v10M20 40V22h8v18M30 40V12h8v28M12 24l6-6 8 4 12-10"></path></svg>
+        <div style="display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font-size:19px;font-weight:600;color:#001C33">Nghiệm thu theo giai đoạn</h3><p style="margin:0;font-size:15px;line-height:1.55;color:#222222">Khuyến nghị thanh toán theo từng mốc nghiệm thu: móng, phần thô, hoàn thiện — trả tiền đến đâu, kiểm tra đến đó.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:18px;padding:28px 24px 28px 0;border-bottom:1px solid #D1D1D1">
+        <svg sc-camel-view-box="0 0 48 48" width="44" height="44" fill="none" stroke="#E0A000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6h24v36H12zM18 14h12M18 21h12M18 28h6M27 35l3 3 5-6"></path></svg>
+        <div style="display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font-size:19px;font-weight:600;color:#001C33">Bảng báo giá theo hạng mục</h3><p style="margin:0;font-size:15px;line-height:1.55;color:#222222">Báo giá bóc tách khối lượng, chủng loại vật tư và nhân công để hạn chế phát sinh ngoài dự kiến.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:18px;padding:28px 24px 28px 0;border-bottom:1px solid #D1D1D1">
+        <svg sc-camel-view-box="0 0 48 48" width="44" height="44" fill="none" stroke="#E0A000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5l16 6v12c0 10-7 17-16 20C15 40 8 33 8 23V11zM17 24l5 5 9-10"></path></svg>
+        <div style="display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font-size:19px;font-weight:600;color:#001C33">Hỗ trợ khi có vướng mắc</h3><p style="margin:0;font-size:15px;line-height:1.55;color:#222222">Đội ngũ Vua Thầu đồng hành trao đổi, làm rõ với nhà thầu khi phát sinh bất đồng trong quá trình thi công.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:18px;padding:28px 24px 28px 0;border-bottom:1px solid #D1D1D1">
+        <svg sc-camel-view-box="0 0 48 48" width="44" height="44" fill="none" stroke="#E0A000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 22v-6a10 10 0 0 1 20 0v6M10 22h28v20H10zM24 30v5"></path></svg>
+        <div style="display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font-size:19px;font-weight:600;color:#001C33">Bảo mật thông tin</h3><p style="margin:0;font-size:15px;line-height:1.55;color:#222222">Số điện thoại và địa chỉ của bạn chỉ chia sẻ với nhà thầu phù hợp khi bạn đồng ý.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:18px;padding:28px 24px 28px 0;border-bottom:1px solid #D1D1D1">
+        <svg sc-camel-view-box="0 0 48 48" width="44" height="44" fill="none" stroke="#E0A000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18a9 9 0 1 0 18 0a9 9 0 1 0 -18 0M8 42a16 16 0 0 1 32 0M20 18l3 3 5-5"></path></svg>
+        <div style="display:flex;flex-direction:column;gap:6px"><h3 style="margin:0;font-size:19px;font-weight:600;color:#001C33">Ghi nhận phản hồi</h3><p style="margin:0;font-size:15px;line-height:1.55;color:#222222">Đánh giá của gia chủ sau công trình được dùng để xét duyệt nhà thầu trong các lần giới thiệu sau.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CONTRACTORS -->
+<section id="nha-thau" aria-labelledby="ct-title" style="padding:clamp(48px,6vw,64px) 0;background:#F3F5F7">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:40px">
+      <div style="max-width:640px">
+        <h2 id="ct-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:700;line-height:1.2;color:#001C33">Hồ sơ nhà thầu</h2>
+        <p style="margin:0;font-size:17px;color:#555E68">Nhà thầu có năng lực và công trình thực tế đã được thẩm định trong hệ sinh thái Dezon.</p>
+      </div>
+      <a href="#nha-thau" style="font-size:15px;font-weight:600;color:#001C33;border-bottom:2px solid #FFB51C;padding-bottom:2px" style-hover="text-decoration:none">Tìm nhà thầu</a>
+    </div>
+    <div style="display:grid;grid-template-columns:{{ critCols }};gap:24px">
+      <sc-for list="{{ partners }}" as="p" hint-placeholder-count="8">
+        <article style="background:#FFFFFF;border:1px solid #D1D1D1;border-radius:8px;overflow:hidden;display:flex;flex-direction:column" style-hover="border-color:#001C33;box-shadow:0 4px 4px rgba(0,0,0,.08),0 8px 12px rgba(0,0,0,.04)">
+          <div style="position:relative;aspect-ratio:4/3;width:100%">
+            <img src="{{ p.img }}" alt="{{ p.ph }}" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:cover;background:#F3F5F7">
+            <span style="position:absolute;top:12px;left:12px;font-size:12px;font-weight:600;color:#001C33;background:#FFB51C;padding:4px 10px;border-radius:999px;pointer-events:none">Đề xuất</span>
+          </div>
+          <div style="padding:20px;display:flex;flex-direction:column;gap:10px;flex:1">
+            <h3 style="margin:0;font-size:18px;font-weight:600;color:#001C33">{{ p.name }}</h3>
+            <p style="margin:0;font-size:14px;color:#555E68">{{ p.city }} · <strong style="color:#001C33;font-weight:600">{{ p.projects }}</strong> công trình · <strong style="color:#001C33;font-weight:600">{{ p.years }}</strong> năm</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px">
+              <sc-for list="{{ p.tags }}" as="t" hint-placeholder-count="3">
+                <span style="font-size:12px;color:#001C33;border:1px solid #D1D1D1;padding:3px 10px;border-radius:999px">{{ t }}</span>
+              </sc-for>
+            </div>
+            <a href="{{ p.href }}" target="_blank" rel="noopener" style="margin-top:auto;padding-top:12px;font-size:14px;font-weight:600;color:#001C33">Xem hồ sơ →</a>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+    <p style="margin:24px 0 0;font-size:13px;color:#555E68">Nguồn: danh sách nhà thầu tiềm năng trên <a href="https://dezon.vn/nha-thau/tiem-nang/" target="_blank" rel="noopener" style="text-decoration:underline">Dezon</a>.</p>
+  </div>
+</section>
+
+<!-- 9. FAQ + CTA -->
+<section id="faq" aria-labelledby="faq-title" style="padding:clamp(48px,6vw,80px) 0;background:#FFFFFF">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:48px;align-items:start">
+    <div>
+      <h2 id="faq-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:700;line-height:1.2;color:#001C33">Câu hỏi thường gặp</h2>
+      <p style="margin:0;font-size:17px;color:#555E68">Chưa thấy câu trả lời? Gửi yêu cầu, chuyên viên sẽ liên hệ.</p>
+    </div>
+    <div style="border-top:1px solid #D1D1D1">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="5">
+        <div style="border-bottom:1px solid #D1D1D1">
+          <button sc-camel-on-click="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width:100%;min-height:64px;display:flex;justify-content:space-between;align-items:center;gap:16px;background:none;border:none;padding:16px 0;text-align:left;font:inherit;font-size:17px;font-weight:600;color:#001C33;cursor:pointer">
+            <span>{{ f.q }}</span>
+            <span aria-hidden="true" style="font-size:24px;font-weight:400;line-height:1;flex-shrink:0">{{ f.sign }}</span>
+          </button>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0 0 20px;font-size:16px;line-height:1.55;color:#222222;max-width:640px">{{ f.a }}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="bao-gia" aria-labelledby="cta-title" style="background:#FFB51C;color:#001C33;scroll-margin-top:76px">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,7vw,96px) clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:clamp(32px,5vw,64px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h2 id="cta-title" style="margin:0;font-size:clamp(28px,3.4vw,44px);font-weight:700;line-height:1.2;text-wrap:balance">Gửi nhu cầu xây nhà, Vua Thầu kết nối nhà thầu phù hợp</h2>
+      <p style="margin:0;font-size:17px;line-height:1.55;text-wrap:pretty">Điền thông tin trong khoảng 1 phút. Chuyên viên Vua Thầu sẽ gọi lại để làm rõ nhu cầu trước khi giới thiệu nhà thầu.</p>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;font-size:16px">
+        <li style="display:flex;gap:12px;align-items:flex-start"><svg sc-camel-view-box="0 0 24 24" width="20" height="20" fill="none" stroke="#001C33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12l5 5L20 6"></path></svg>Nhà thầu đã qua xét duyệt pháp lý và năng lực</li>
+        <li style="display:flex;gap:12px;align-items:flex-start"><svg sc-camel-view-box="0 0 24 24" width="20" height="20" fill="none" stroke="#001C33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12l5 5L20 6"></path></svg>Báo giá theo hạng mục, dễ so sánh</li>
+        <li style="display:flex;gap:12px;align-items:flex-start"><svg sc-camel-view-box="0 0 24 24" width="20" height="20" fill="none" stroke="#001C33" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:2px"><path d="M4 12l5 5L20 6"></path></svg>Thông tin liên hệ chỉ chia sẻ khi bạn đồng ý</li>
+      </ul>
+      <div style="border-top:1px solid rgba(0,28,51,.2);padding-top:20px;display:flex;flex-wrap:wrap;gap:8px 24px;font-size:15px">
+        <span>Cần tư vấn ngay? <a href="tel:0931168749" style="font-weight:700;color:#001C33">0931 168 749</a></span>
+        <a href="mailto:alo@vuathau.com.vn" style="font-weight:600;color:#001C33">alo@vuathau.com.vn</a>
+      </div>
+    </div>
+
+    <div style="background:#FFFFFF;border-radius:8px;padding:clamp(24px,3vw,36px);box-shadow:0 8px 24px rgba(0,28,51,.12)">
+      <sc-if value="{{ leadDone }}" hint-placeholder-val="{{ false }}">
+        <div role="status" style="display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:12px 0">
+          <svg sc-camel-view-box="0 0 48 48" width="56" height="56" fill="none" stroke="#E0A000" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 24a20 20 0 1 0 40 0a20 20 0 1 0 -40 0"></path><path d="M15 24l6 6 12-13"></path></svg>
+          <h3 style="margin:0;font-size:24px;font-weight:600;color:#001C33">Đã nhận yêu cầu của bạn</h3>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:#222222">Mã yêu cầu <strong>{{ leadRef }}</strong> · {{ heroService }} · {{ heroType }}{{ leadCityTxt }}. Chuyên viên Vua Thầu sẽ liên hệ số <strong>{{ lead.phone }}</strong> trong giờ làm việc.</p>
+          <button type="button" sc-camel-on-click="{{ leadReset }}" style="min-height:48px;padding:0 20px;background:none;border:1px solid #001C33;border-radius:4px;font:inherit;font-size:15px;font-weight:600;color:#001C33;cursor:pointer" style-hover="background:#F3F5F7">Gửi yêu cầu khác</button>
+        </div>
+      </sc-if>
+      <sc-if value="{{ leadOpen }}" hint-placeholder-val="{{ true }}">
+        <form sc-camel-on-submit="{{ leadSubmit }}" sc-camel-no-validate="{{ true }}" aria-label="Form gửi nhu cầu xây nhà" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px">
+          <h3 style="grid-column:1/-1;margin:0 0 4px;font-size:20px;font-weight:600;color:#001C33">Thông tin công trình</h3>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#001C33">Họ và tên *
+            <input ref="{{ nameRef }}" value="{{ lead.name }}" sc-camel-on-change="{{ setName }}" placeholder="Nguyễn Văn A" sc-camel-auto-complete="name" style="height:48px;border:1px solid #D1D1D1;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;background:#FFFFFF;box-sizing:border-box;width:100%">
+            <sc-if value="{{ le.name }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px;font-weight:500;color:#B42318">{{ le.name }}</span></sc-if>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#001C33">Số điện thoại *
+            <input type="tel" value="{{ lead.phone }}" sc-camel-on-change="{{ setPhone }}" placeholder="09xx xxx xxx" sc-camel-auto-complete="tel" style="height:48px;border:1px solid #D1D1D1;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;background:#FFFFFF;box-sizing:border-box;width:100%">
+            <sc-if value="{{ le.phone }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px;font-weight:500;color:#B42318">{{ le.phone }}</span></sc-if>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#001C33">Hạng mục
+            <sc-raw-select value="{{ heroService }}" sc-camel-on-change="{{ setHeroService }}" style="height:48px;border:1px solid #D1D1D1;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;background:#FFFFFF;box-sizing:border-box;width:100%">
+              <sc-for list="{{ services }}" as="s" hint-placeholder-count="6"><option value="{{ s.title }}">{{ s.title }}</option></sc-for>
+            </sc-raw-select>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#001C33">Loại công trình
+            <sc-raw-select value="{{ heroType }}" sc-camel-on-change="{{ setHeroType }}" style="height:48px;border:1px solid #D1D1D1;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;background:#FFFFFF;box-sizing:border-box;width:100%">
+              <sc-for list="{{ buildingTypes }}" as="b" hint-placeholder-count="6"><option value="{{ b }}">{{ b }}</option></sc-for>
+            </sc-raw-select>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#001C33">Tỉnh / Thành phố *
+            <input value="{{ heroCity }}" sc-camel-on-change="{{ setHeroCity }}" placeholder="VD: TP. Hồ Chí Minh" style="height:48px;border:1px solid #D1D1D1;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;background:#FFFFFF;box-sizing:border-box;width:100%">
+            <sc-if value="{{ le.city }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px;font-weight:500;color:#B42318">{{ le.city }}</span></sc-if>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#001C33">Ngân sách dự kiến
+            <sc-raw-select value="{{ lead.budget }}" sc-camel-on-change="{{ setBudget }}" style="height:48px;border:1px solid #D1D1D1;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;background:#FFFFFF;box-sizing:border-box;width:100%">
+              <sc-for list="{{ budgets }}" as="bg" hint-placeholder-count="5"><option value="{{ bg }}">{{ bg }}</option></sc-for>
+            </sc-raw-select>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#001C33;grid-column:1/-1">Mô tả thêm (không bắt buộc)
+            <textarea value="{{ lead.note }}" sc-camel-on-change="{{ setNote }}" rows="3" placeholder="Diện tích đất, số tầng, thời gian dự kiến khởi công…" style="border:1px solid #D1D1D1;border-radius:4px;padding:12px;font:inherit;font-weight:400;font-size:15px;color:#222222;resize:vertical;box-sizing:border-box;width:100%"></textarea>
+          </label>
+          <label style="grid-column:1/-1;display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5;color:#222222;cursor:pointer">
+            <input type="checkbox" checked="{{ lead.consent }}" sc-camel-on-change="{{ setConsent }}" style="width:20px;height:20px;margin:0;flex-shrink:0;accent-color:#001C33">
+            <span>Tôi đồng ý để Vua Thầu liên hệ và chia sẻ nhu cầu với nhà thầu phù hợp.</span>
+          </label>
+          <sc-if value="{{ le.consent }}" hint-placeholder-val="{{ false }}"><span style="grid-column:1/-1;margin-top:-8px;font-size:13px;font-weight:500;color:#B42318">{{ le.consent }}</span></sc-if>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+          <sc-if value="{{ hasSendError }}" hint-placeholder-val="{{ false }}"><span role="alert" style="grid-column:1/-1;font-size:14px;color:#B42318">{{ sendError }}</span></sc-if>
+          <button type="submit" disabled="{{ sending }}" style="grid-column:1/-1;min-height:56px;background:#001C33;color:#FFFFFF;border:none;border-radius:4px;font:inherit;font-size:17px;font-weight:600;cursor:pointer" style-hover="background:#0A3354">{{ leadLabel }}</button>
+        </form>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer style="background:#05243E;color:#D5DCE3">
+  <div style="max-width:1200px;margin:0 auto;padding:56px clamp(20px,4vw,56px) 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:40px">
+    <div style="display:flex;flex-direction:column;gap:16px;grid-column:span 1">
+      <img src="/assets/ae7bdbf0.png" alt="Vua Thầu" style="width:126px;height:auto;display:block">
+      <p style="margin:0;font-size:14px;line-height:1.5">Nền tảng kết nối chủ nhà với nhà thầu xây dựng nhà ở.</p>
+    </div>
+    <sc-for list="{{ footerCols }}" as="col" hint-placeholder-count="3">
+      <nav aria-label="{{ col.title }}" style="display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0 0 4px;font-size:14px;font-weight:600;color:#FFFFFF;letter-spacing:.06em">{{ col.title }}</h3>
+        <sc-for list="{{ col.links }}" as="l" hint-placeholder-count="4">
+          <a href="{{ l.href }}" style="color:#D5DCE3;font-size:14px" style-hover="color:#FFB51C">{{ l.label }}</a>
+        </sc-for>
+      </nav>
+    </sc-for>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:20px clamp(20px,4vw,56px) 32px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px">
+    <span>© 2026 Vua Thầu. Thông tin pháp lý doanh nghiệp sẽ được cập nhật.</span>
+    <span style="display:flex;flex-wrap:wrap;gap:16px"><a href="tel:0931168749" style="color:inherit">Hotline: 0931 168 749</a><a href="mailto:alo@vuathau.com.vn" style="color:inherit">alo@vuathau.com.vn</a></span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;ctaMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;free&quot;,&quot;quote&quot;],&quot;default&quot;:&quot;free&quot;,&quot;tsType&quot;:&quot;'free'|'quote'&quot;,&quot;section&quot;:&quot;CTA&quot;}}">
+const FOOTER_HREF = { 'Dành cho nhà thầu': '/nha-thau/', 'Tìm nhà thầu': '#nha-thau', 'Bảng giá': '#bao-gia', 'Cẩm nang': '#faq' };
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1280, menuOpen: false, faqOpen: 0,
+    heroService: 'Xây nhà trọn gói', heroType: 'Nhà cấp 4', heroCity: '', heroSubmitted: false,
+    lead: { name: '', phone: '', budget: 'Chưa xác định', note: '', consent: false }, leadTried: false, leadDone: false, leadRef: '', partners: null, sending: false, sendError: '' };
+  nameRef = React.createRef();
+  leadErrors() { const l = this.state.lead, e = {};
+    if (l.name.trim().length < 2) e.name = 'Vui lòng nhập họ tên.';
+    if (!/^(0|\+84)\d{9,10}$/.test(l.phone.replace(/[\s.]/g, ''))) e.phone = 'Số điện thoại chưa hợp lệ.';
+    if (this.state.heroCity.trim().length < 2) e.city = 'Vui lòng nhập tỉnh/thành.';
+    if (!l.consent) e.consent = 'Vui lòng đồng ý để chúng tôi liên hệ.';
+    return e; }
+  setLead(k, v) { this.setState(s => ({ lead: { ...s.lead, [k]: v } })); }
+  componentDidMount() { this._r = () => this.setState({ w: window.innerWidth }); window.addEventListener('resize', this._r);
+    fetch('/api/partners.php').then(r => r.ok ? r.json() : []).then(l => { if (Array.isArray(l) && l.length) this.setState({ partners: l.map(p => ({ ...p, ph: 'Công trình thực tế ' + p.name })) }); }).catch(() => {}); }
+  componentWillUnmount() { window.removeEventListener('resize', this._r); }
+  renderVals() {
+    const free = (this.props.ctaMode ?? 'free') === 'free';
+    const wide = this.state.w >= 1100;
+    const services = [
+      ['Xây nhà trọn gói', 'Thiết kế, phần thô và hoàn thiện trong một hợp đồng, một đầu mối.'],
+      ['Xây biệt thự', 'Biệt thự phố, biệt thự vườn với yêu cầu kỹ thuật và thẩm mỹ cao.'],
+      ['Xây dựng phần thô', 'Móng, khung, tường, mái — nền tảng kết cấu đúng tiêu chuẩn.'],
+      ['Cải tạo công trình', 'Cải tạo lớn: thay đổi kết cấu, nâng tầng, mở rộng công năng.'],
+      ['Hoàn thiện công trình', 'Hoàn thiện toàn bộ nội ngoại thất cho công trình đã có phần thô.'],
+      ['Thiết kế & xây dựng', 'Một đơn vị chịu trách nhiệm từ bản vẽ kiến trúc đến bàn giao.'],
+    ].map(([title, desc], i) => ({ title, desc, no: '0' + (i + 1), icon: ["M6 22L24 8l18 14M10 19v23h28V19M20 42V30h8v12","M4 42h40M6 42V22l12-9 12 9M30 42V18h12v24M12 42V32h8v10M34 24h4M34 31h4","M8 42V10M40 42V10M8 10h32M8 21h32M8 32h32M24 10v32","M8 24L22 12l14 12M12 21v21h20V21M38 6v12M32 12h12M18 42V32h8v10","M8 8h26v10H8zM34 13h6v12H22v6M19 31h6v11h-6z","M6 6h22v30H6zM10 14h14M10 20h14M10 26h8M30 42l12-12-4-4-12 12v4zM34 30l4 4"][i] }));
+    const faqsRaw = [
+      ['Vua Thầu có thu phí chủ nhà không?', 'Chính sách phí cho chủ nhà sẽ được công bố rõ ràng trước khi bạn gửi yêu cầu. Nội dung này chờ chủ sở hữu phê duyệt.'],
+      ['Tôi sẽ nhận được bao nhiêu báo giá?', 'Số nhà thầu được ghép phụ thuộc vào hạng mục, khu vực và năng lực sẵn có. Chúng tôi không cam kết một con số cố định.'],
+      ['Nhà thầu được xác minh như thế nào?', 'Nhà thầu nộp hồ sơ pháp lý, năng lực và dự án tiêu biểu. Trạng thái xác minh hiển thị trên từng hồ sơ.'],
+      ['Thông tin liên hệ của tôi có được chia sẻ không?', 'Chỉ nhà thầu được phân công và có sự đồng ý của bạn mới xem được thông tin liên hệ.'],
+      ['Vua Thầu có nhận sửa chữa nhỏ không?', 'Không. Chúng tôi tập trung vào xây mới, cải tạo lớn và hoàn thiện công trình.'],
+    ];
+    return {
+      wide, narrow: !wide, critCols: this.state.w >= 1100 ? 'repeat(4,minmax(0,1fr))' : this.state.w >= 600 ? 'repeat(2,minmax(0,1fr))' : '1fr', menuOpen: this.state.menuOpen, showMobileMenu: !wide && this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      ctaPrimary: free ? 'Kết nối nhà thầu' : 'Nhận báo giá xây dựng',
+      ctaShort: free ? (this.state.w < 480 ? 'Kết nối thầu' : 'Kết nối nhà thầu') : (this.state.w < 480 ? 'Báo giá' : 'Nhận báo giá'),
+      nav: [['Dịch vụ', '#dich-vu'], ['Tìm nhà thầu', '#nha-thau'], ['Bảng giá', '#bao-gia'], ['Cẩm nang', '#faq'], ['Dành cho nhà thầu', '/nha-thau/']].map(([label, href]) => ({ label, href })),
+      services,
+      buildingTypes: ['Nhà cấp 4', 'Nhà phố', 'Biệt thự', 'Căn hộ', 'Nhà vườn', 'Công trình dân dụng khác'],
+      heroService: this.state.heroService, heroType: this.state.heroType, heroCity: this.state.heroCity, heroSubmitted: this.state.heroSubmitted,
+      setHeroService: e => this.setState({ heroService: e.target.value, heroSubmitted: false }),
+      setHeroType: e => this.setState({ heroType: e.target.value, heroSubmitted: false }),
+      setHeroCity: e => this.setState({ heroCity: e.target.value }),
+      submitHero: e => { e.preventDefault(); const el = document.getElementById('bao-gia'); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 76, behavior: 'smooth' }); setTimeout(() => this.nameRef.current && this.nameRef.current.focus({ preventScroll: true }), 600); },
+      lead: this.state.lead, leadDone: this.state.leadDone, leadOpen: !this.state.leadDone, leadRef: this.state.leadRef,
+      leadCityTxt: this.state.heroCity ? ' · ' + this.state.heroCity : '',
+      le: this.state.leadTried ? this.leadErrors() : {},
+      nameRef: this.nameRef,
+      budgets: ['Chưa xác định', 'Dưới 1 tỷ', '1 – 2 tỷ', '2 – 5 tỷ', 'Trên 5 tỷ'],
+      setName: e => this.setLead('name', e.target.value), setPhone: e => this.setLead('phone', e.target.value),
+      setBudget: e => this.setLead('budget', e.target.value), setNote: e => this.setLead('note', e.target.value),
+      setConsent: e => this.setLead('consent', e.target.checked),
+      sendError: this.state.sendError, hasSendError: !!this.state.sendError, sending: this.state.sending,
+      leadLabel: this.state.sending ? 'Đang gửi…' : 'Gửi yêu cầu',
+      leadSubmit: async e => { e.preventDefault(); if (this.state.sending) return;
+        if (Object.keys(this.leadErrors()).length) { this.setState({ leadTried: true }); return; }
+        this.setState({ sending: true, sendError: '' });
+        const { lead, heroService, heroType, heroCity } = this.state;
+        try {
+          const r = await fetch('/api/lead.php', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ...lead, service: heroService, type: heroType, city: heroCity, website: e.target.website ? e.target.website.value : '' }) });
+          const d = await r.json().catch(() => ({}));
+          if (!r.ok || !d.ok) throw new Error(d.error || 'Chưa gửi được, vui lòng thử lại.');
+          this.setState({ sending: false, leadDone: true, leadRef: d.ref });
+        } catch (err) { this.setState({ sending: false, sendError: err.message || 'Chưa gửi được, vui lòng thử lại.' }); } },
+      leadReset: () => this.setState({ leadDone: false, leadTried: false, lead: { name: '', phone: '', budget: 'Chưa xác định', note: '', consent: false } }),
+      pains: [
+        'Lần đầu xây nhà nên không biết bắt đầu từ đâu.',
+        'Không biết làm sao để tìm nhà thầu đáng tin.',
+        'Nhận báo giá rồi vẫn không chắc mức giá có hợp lý không.',
+        'Muốn so sánh nhiều nhà thầu với nhau.',
+        'Tự liên hệ và tìm hiểu từng nơi quá mất công.',
+        'Chỉ xem hình ảnh trên mạng thì khó đánh giá năng lực thi công thực tế.',
+        'Mỗi nhà thầu báo giá một kiểu nên không biết chọn theo tiêu chí nào.',
+        'Lo phát sinh chi phí và chậm tiến độ khi thi công.',
+      ],
+      steps: [
+        ['Mô tả công trình', 'Loại nhà, diện tích, số tầng, địa điểm, phạm vi và ngân sách dự kiến. Đính kèm bản vẽ nếu có.'],
+        ['Sàng lọc & ghép thầu', 'Chuyên viên xác nhận nhu cầu, đối chiếu với nhà thầu có năng lực và khu vực phù hợp.'],
+        ['So sánh phương án', 'Nhận đề xuất từ các nhà thầu được phân công, so sánh và quyết định khi bạn sẵn sàng.'],
+      ].map(([title, desc], i) => ({ title, desc, no: '0' + (i + 1) })),
+      criteria: [
+        ['Năng lực thi công', 'Hạng mục chuyên môn, đội ngũ và năng lực tài chính phù hợp quy mô.'],
+        ['Khu vực hoạt động', 'Ưu tiên nhà thầu đang hoạt động tại tỉnh/thành của công trình.'],
+        ['Quy mô dự án', 'Khớp diện tích, số tầng và ngân sách với dải giá trị hợp đồng thường làm.'],
+        ['Kinh nghiệm đã xác minh', 'Dự án tiêu biểu có hồ sơ, hình ảnh và thông tin được kiểm tra.'],
+      ].map(([title, desc]) => ({ title, desc })),
+      contractors: [
+        { name: 'Nhà thầu mẫu A', region: 'TP. Hồ Chí Minh · Bình Dương', tags: ['Nhà phố', 'Xây trọn gói', 'Phần thô'], status: 'Đang xét duyệt', slot: 'ct-1' },
+        { name: 'Nhà thầu mẫu B', region: 'Hà Nội · Bắc Ninh', tags: ['Biệt thự', 'Thiết kế & xây dựng'], status: 'Chưa xác minh', slot: 'ct-2' },
+        { name: 'Nhà thầu mẫu C', region: 'Đà Nẵng · Quảng Nam', tags: ['Nhà cấp 4', 'Cải tạo', 'Hoàn thiện'], status: 'Chưa xác minh', slot: 'ct-3' },
+      ],
+      partners: this.state.partners || [
+        ['Kiến Phong', 'TP. HCM', 7, 8, ['Nhà phố', 'Biệt thự', 'Căn hộ'], 'kien-phong', 'ApoMbxpbgoLIAaxJt3cl2gFR'],
+        ['Smartcons Tech', 'TP. HCM', 8, 6, ['Nhà phố', 'Biệt thự', 'Căn hộ'], 'smartcons-tech', 'WqoJbgw4noOXCHxUQwklirM8'],
+        ['Huy Hoàng', 'TP. HCM', 6, 22, ['Nhà phố', 'Biệt thự', 'Công trình khác'], 'huy-hoang', 'FYiUbfK4votN9Vxq41tlFLWC'],
+        ['Thiên Hưng', 'Hà Nội', 6, 7, ['Nhà phố', 'Biệt thự'], 'thien-hung', 'RPJQbHgSaoh9iNxkbBmldjwR'],
+        ['Hoàng Minh Phát', 'Hà Nội', 4, 9, ['Nhà phố', 'Biệt thự', 'Thương mại'], 'hoang-minh-phat', 'Ius1brOVVoZZd4xAEOVlrXIL'],
+        ['BIC', 'TP. HCM', 4, 10, ['Nhà phố', 'Biệt thự', 'Căn hộ'], 'bic', 'W9TLbp8HrofxI8x3LNrlksF4'],
+        ['Kiến Thịnh', 'TP. HCM', 1, 14, ['Nhà phố', 'Biệt thự', 'Căn hộ'], 'kien-thinh', 'Md4xbGv4goM3E2xnf68lUqKz'],
+        ['Huy Long', 'TP. HCM', 1, 3, ['Nhà phố', 'Biệt thự', 'Dự án'], 'huy-long', 'QnKWbNRH7od3sfxWdLglWtIU'],
+      ].map(([name, city, projects, years, tags, slug, im]) => ({ name, city, projects, years, tags, img: 'https://dezon.vn/wp-content/uploads/dz-data/nt/' + slug + '/' + im + '.jpg', slot: 'home-partner-' + slug, ph: 'Ảnh công trình: ' + name, href: 'https://dezon.vn/nha-thau/' + slug + '/' })),
+      faqs: faqsRaw.map(([q, a], i) => { const open = this.state.faqOpen === i; return { q, a, open, sign: open ? '−' : '+', toggle: () => this.setState({ faqOpen: open ? -1 : i }) }; }),
+      footerCols: [
+        { title: 'DỊCH VỤ', links: services.map(s => s.title).slice(0, 4) },
+        { title: 'KHÁM PHÁ', links: ['Dự án', 'Tìm nhà thầu', 'Bảng giá', 'Cẩm nang', 'Ước tính chi phí'] },
+        { title: 'VỀ Vua Thầu', links: ['Dành cho nhà thầu', 'Chính sách bảo mật', 'Điều khoản sử dụng', 'Liên hệ'] },
+      ].map(c => ({ title: c.title, links: c.links.map(label => ({ label, href: FOOTER_HREF[label] || (services.some(s => s.title === label) ? '#dich-vu' : '#top') })) })),
+    };
+  }
+}
+</script>
+
+
+</body></html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="vi"><head><script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js": "/nha-thau/assets/5bb12c60.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "/nha-thau/assets/42eea3d4.js"};</script><title>Vua Thầu cho nhà thầu – Đăng ký đối tác</title><meta name="description" content="Vua Thầu đồng hành cùng nhà thầu xây dựng tìm khách hàng: minh bạch, nhanh chóng, chuẩn kết nối. Đăng ký trở thành đối tác Vua Thầu.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/nha-thau/assets/3351aba8.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/b4713018.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/a2b09dc3.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/866f7caa.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/ee435bcd.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/e36ae42b.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/96856ef2.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/6a4d5a9d.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/cc088b86.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/b4713018.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/a2b09dc3.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/866f7caa.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/ee435bcd.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/e36ae42b.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/96856ef2.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/6a4d5a9d.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/cc088b86.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/b4713018.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/a2b09dc3.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/866f7caa.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/ee435bcd.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/e36ae42b.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/96856ef2.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/6a4d5a9d.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/cc088b86.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/b4713018.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/a2b09dc3.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/866f7caa.woff2") format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B0A;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/ee435bcd.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/e36ae42b.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/96856ef2.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/6a4d5a9d.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/nha-thau/assets/cc088b86.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<script src="/nha-thau/assets/757d4867.js"></script>
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Noto Sans',system-ui,sans-serif;color:#222222;background:#FFFFFF;-webkit-font-smoothing:antialiased}
+a{color:#001C33;text-decoration:none}
+a:hover{color:#001C33;text-decoration:underline}
+*:focus-visible{outline:3px solid #FFB51C;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</helmet>
+
+<div style="font-family:'Noto Sans',system-ui,sans-serif;color:#222222;background:#FFFFFF">
+
+<!-- 1. PARTNER HEADER -->
+<header style="position:sticky;top:0;z-index:50;background:#05243E;border-bottom:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px);height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <div style="display:flex;align-items:center;gap:16px;flex-shrink:0">
+      <a href="Vua Thau Homepage.dc.html" aria-label="Vua Thầu — Trang chủ" style="display:flex;align-items:center">
+        <img src="/nha-thau/assets/fc7094f3.png" alt="Vua Thầu — Một yêu cầu, nhiều nhà thầu" style="height:36px;width:auto;display:block">
+      </a>
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <span style="font-size:12px;font-weight:600;letter-spacing:.16em;color:#FFB51C;border-left:1px solid rgba(255,255,255,.25);padding-left:16px">ĐỐI TÁC</span>
+      </sc-if>
+    </div>
+    <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="Điều hướng đối tác" style="display:flex;align-items:center;gap:28px">
+        <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
+          <a href="{{ n.href }}" style="color:#FFFFFF;font-size:15px;font-weight:500;white-space:nowrap" style-hover="color:#FFB51C;text-decoration:none">{{ n.label }}</a>
+        </sc-for>
+      </nav>
+    </sc-if>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="#dang-ky" style="display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:#FFB51C;color:#001C33;font-weight:600;font-size:15px;border-radius:4px;white-space:nowrap" style-hover="background:#FFC547;text-decoration:none;color:#001C33">{{ ctaShort }}</a>
+      <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+        <button sc-camel-on-click="{{ toggleMenu }}" aria-label="Mở menu" aria-expanded="{{ menuOpen }}" style="width:48px;height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:4px;cursor:pointer">
+          <span style="width:20px;height:2px;background:#FFFFFF"></span>
+          <span style="width:20px;height:2px;background:#FFFFFF"></span>
+          <span style="width:20px;height:2px;background:#FFFFFF"></span>
+        </button>
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ showMobileMenu }}" hint-placeholder-val="{{ false }}">
+    <nav aria-label="Menu di động" style="background:#05243E;border-top:1px solid rgba(255,255,255,.1);padding:8px 20px 20px;display:flex;flex-direction:column">
+      <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5">
+        <a href="{{ n.href }}" sc-camel-on-click="{{ closeMenu }}" style="color:#FFFFFF;font-size:16px;font-weight:500;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.08)">{{ n.label }}</a>
+      </sc-for>
+      <a href="Vua Thau Homepage.dc.html" style="color:#FFB51C;font-size:15px;font-weight:500;padding:14px 0">← Trang dành cho chủ nhà</a>
+    </nav>
+  </sc-if>
+</header>
+
+<main id="top">
+
+<!-- 1b. COVER BANNER -->
+<section aria-label="Vua Thầu – Kết nối chủ nhà và nhà thầu uy tín" style="background:#001C33;line-height:0">
+  <img src="/nha-thau/assets/9c3a44d6.png" alt="Vua Thầu – Kết nối chủ nhà và nhà thầu uy tín. Gửi nhu cầu, nhận báo giá, gặp nhà thầu." style="display:block;width:100%;height:auto;max-width:1862px;margin:0 auto">
+</section>
+
+<!-- 2. HERO -->
+<section aria-labelledby="hero-title" style="background:#001C33;color:#FFFFFF;overflow:hidden">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(20px,4vw,56px);display:flex;justify-content:center">
+    <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:24px;max-width:820px">
+      <p style="margin:0;font-size:13px;font-weight:600;letter-spacing:.24em;color:#FFB51C">DÀNH CHO NHÀ THẦU XÂY DỰNG</p>
+      <h1 id="hero-title" style="margin:0;font-size:clamp(30px,4.4vw,52px);font-weight:600;line-height:1.18;letter-spacing:-.01em;text-wrap:balance">Tập trung thi công. Vua Thầu đồng hành tìm khách hàng.</h1>
+      <p style="margin:0;font-size:18px;line-height:1.55;color:#D5DCE3;max-width:600px;text-wrap:pretty">Kết nối nhu cầu xây dựng phù hợp, quảng bá năng lực doanh nghiệp, hỗ trợ dự toán và tiếp cận nguồn vật tư qua hệ sinh thái Dezon.</p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:8px">
+        <a href="#dang-ky" style="display:inline-flex;align-items:center;min-height:56px;padding:0 32px;background:#FFB51C;color:#001C33;font-weight:600;font-size:17px;border-radius:4px" style-hover="background:#FFC547;text-decoration:none;color:#001C33">Đăng ký trở thành nhà thầu đối tác</a>
+        <a href="#quy-trinh" style="display:inline-flex;align-items:center;min-height:56px;padding:0 28px;color:#FFFFFF;font-weight:600;font-size:17px;border-radius:4px;border:1px solid rgba(255,255,255,.4)" style-hover="border-color:#FFFFFF;text-decoration:none;color:#FFFFFF">Xem quy trình hợp tác</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. WHO CAN JOIN -->
+<section id="dieu-kien" aria-labelledby="who-title" style="padding:clamp(48px,6vw,80px) 0;background:#FFFFFF">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <div style="max-width:680px;margin-bottom:40px">
+      <h2 id="who-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:600;line-height:1.2;color:#001C33">Ai có thể trở thành đối tác?</h2>
+      <p style="margin:0;font-size:17px;line-height:1.5;color:#555E68">Vua Thầu tìm kiếm công ty, nhà thầu thi công xây dựng có năng lực nhận công trình trọn gói — từ nhà cấp 4, nhà phố đến biệt thự.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:{{ fourCols }};gap:24px">
+      <sc-for list="{{ eligibility }}" as="e" hint-placeholder-count="4">
+        <div style="background:#F5F5F5;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px"><div style="display:flex;align-items:center;justify-content:flex-start;flex-shrink:0"><svg sc-camel-view-box="0 0 48 48" width="44" height="44" fill="none" stroke="#E0A000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{ e.icon }}"></path></svg></div><span style="font-size:13px;font-weight:600;color:#555E68;letter-spacing:.08em">{{ e.no }}</span></div>
+          <h3 style="margin:0;font-size:18px;font-weight:600;color:#001C33">{{ e.title }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.5;color:#222222">{{ e.desc }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 4. BENEFITS -->
+<section id="quyen-loi" aria-labelledby="ben-title" style="padding:clamp(48px,6vw,80px) 0;background:#F3F5F7">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <div style="max-width:680px;margin-bottom:40px">
+      <h2 id="ben-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:600;line-height:1.2;color:#001C33">Quyền lợi đối tác</h2>
+      <p style="margin:0;font-size:17px;line-height:1.5;color:#555E68">Mỗi quyền lợi ghi rõ trạng thái triển khai thực tế.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:{{ twoCols }};gap:24px">
+      <sc-for list="{{ benefits }}" as="b" hint-placeholder-count="4">
+        <article style="background:#FFFFFF;border:1px solid #D1D1D1;border-radius:8px;overflow:hidden;display:flex;flex-direction:column">
+          <div style="padding:24px;display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+              <div style="display:flex;align-items:center;gap:14px"><svg sc-camel-view-box="0 0 48 48" width="36" height="36" fill="none" stroke="#001C33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{ b.icon }}"></path></svg><span style="font-size:13px;font-weight:600;color:#555E68;letter-spacing:.08em">{{ b.no }}</span></div>
+              <span style="{{ b.badgeStyle }}">{{ b.status }}</span>
+            </div>
+            <h3 style="margin:0;font-size:20px;font-weight:600;line-height:1.3;color:#001C33">{{ b.title }}</h3>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:#222222;text-wrap:pretty">{{ b.desc }}</p>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 5. HOW IT WORKS -->
+<section id="quy-trinh" aria-labelledby="how-title" style="padding:clamp(48px,6vw,80px) 0;background:#001C33;color:#FFFFFF">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <h2 id="how-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:600;line-height:1.2">Trở thành đối tác Vua Thầu chỉ với 4 bước</h2>
+    <p style="margin:0 0 48px;font-size:17px;color:#D5DCE3;max-width:720px">Quy trình rõ ràng, hỗ trợ trực tiếp từ đội ngũ Vua Thầu để nhà thầu nhanh chóng bắt đầu tiếp cận khách hàng phù hợp.</p>
+    <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:{{ fourCols }};gap:40px 24px">
+      <sc-for list="{{ steps }}" as="st" hint-placeholder-count="6">
+        <li style="border-top:3px solid #FFB51C;padding-top:20px;display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><span style="font-size:32px;font-weight:600;line-height:1;color:#FFB51C">{{ st.no }}</span><div style="width:56px;height:56px;border:1.5px solid #FFB51C;display:flex;align-items:center;justify-content:center"><svg sc-camel-view-box="0 0 48 48" width="32" height="32" fill="none" stroke="#FFB51C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{ st.icon }}"></path></svg></div></div>
+          <h3 style="margin:0;font-size:20px;font-weight:600">{{ st.title }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.55;color:#D5DCE3;text-wrap:pretty">{{ st.desc }}</p>
+        </li>
+      </sc-for>
+    </ol>
+  </div>
+</section>
+
+<!-- 6. PROOF (honest placeholder) -->
+<section id="doi-tac-tieu-bieu" aria-labelledby="proof-title" style="padding:clamp(48px,6vw,64px) 0;background:#FFFFFF">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:32px">
+      <div style="max-width:680px">
+      <h2 id="proof-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:600;line-height:1.2;color:#001C33">Đối tác tiêu biểu</h2>
+      <p style="margin:0;font-size:17px;line-height:1.5;color:#555E68">Những nhà thầu có năng lực và công trình thực tế đã được thẩm định trong hệ sinh thái Dezon.</p>
+    </div>
+      <a href="https://dezon.vn/nha-thau/tiem-nang/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border:1px solid #001C33;border-radius:4px;font-size:15px;font-weight:600;color:#001C33;white-space:nowrap" style-hover="background:#001C33;color:#FFFFFF;text-decoration:none">Xem tất cả →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:{{ fourCols }};gap:24px">
+      <sc-for list="{{ partners }}" as="p" hint-placeholder-count="8">
+        <article style="background:#FFFFFF;border:1px solid #D1D1D1;border-radius:8px;overflow:hidden;display:flex;flex-direction:column" style-hover="border-color:#001C33;box-shadow:0 4px 4px rgba(0,0,0,.08),0 8px 12px rgba(0,0,0,.04)">
+          <div style="position:relative;aspect-ratio:4/3;width:100%">
+            <img src="{{ p.img }}" alt="{{ p.ph }}" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:cover;background:#F3F5F7">
+            <span style="position:absolute;top:12px;left:12px;font-size:12px;font-weight:600;color:#001C33;background:#FFB51C;padding:4px 10px;border-radius:999px;pointer-events:none">Đề xuất</span>
+          </div>
+          <div style="padding:20px;display:flex;flex-direction:column;gap:10px;flex:1">
+            <h3 style="margin:0;font-size:18px;font-weight:600;color:#001C33">{{ p.name }}</h3>
+            <p style="margin:0;font-size:14px;color:#555E68">{{ p.city }} · <strong style="color:#001C33;font-weight:600">{{ p.projects }}</strong> công trình · <strong style="color:#001C33;font-weight:600">{{ p.years }}</strong> năm</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px">
+              <sc-for list="{{ p.tags }}" as="t" hint-placeholder-count="3">
+                <span style="font-size:12px;color:#001C33;border:1px solid #D1D1D1;padding:3px 10px;border-radius:999px">{{ t }}</span>
+              </sc-for>
+            </div>
+            <a href="{{ p.href }}" target="_blank" rel="noopener" style="margin-top:auto;padding-top:12px;font-size:14px;font-weight:600;color:#001C33">Xem hồ sơ →</a>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+    <div style="margin-top:32px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px">
+      <p style="margin:0;font-size:14px;color:#555E68">Nguồn: danh sách nhà thầu tiềm năng đã được thẩm định trên hệ sinh thái <a href="https://dezon.vn/nha-thau/tiem-nang/" target="_blank" rel="noopener" style="text-decoration:underline">Dezon</a>.</p>
+      <a href="#dang-ky" style="display:inline-flex;align-items:center;min-height:52px;padding:0 24px;background:#001C33;color:#FFFFFF;font-weight:600;font-size:16px;border-radius:4px" style-hover="background:#0A3354;text-decoration:none;color:#FFFFFF">Đăng ký ngay</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. PLANS -->
+<section id="chinh-sach" aria-labelledby="plan-title" style="padding:clamp(48px,6vw,80px) 0;background:#F3F5F7">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <div style="max-width:820px;margin-bottom:40px">
+      <h2 id="plan-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:600;line-height:1.2;color:#001C33">Hợp tác cùng Vua Thầu</h2>
+      <p style="margin:0;font-size:17px;line-height:1.5;color:#555E68">Chúng tôi đồng hành cùng các doanh nghiệp xây dựng trong việc tìm kiếm khách hàng, quảng bá năng lực và tối ưu hoạt động kinh doanh. Mỗi nhà thầu sẽ được tư vấn phương án hợp tác phù hợp với quy mô và nhu cầu thực tế.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:{{ fourCols }};gap:24px">
+      <sc-for list="{{ plans }}" as="p" hint-placeholder-count="4">
+        <article style="background:#FFFFFF;border:1px solid #D1D1D1;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:12px">
+          <div style="width:52px;height:52px;border-radius:999px;background:#FFB51C;display:flex;align-items:center;justify-content:center"><svg sc-camel-view-box="0 0 48 48" width="28" height="28" fill="none" stroke="#001C33" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{ p.icon }}"></path></svg></div>
+          <h3 style="margin:0;font-size:18px;font-weight:600;color:#001C33">{{ p.title }}</h3>
+          <p style="margin:0;font-size:15px;line-height:1.5;color:#222222;flex:1">{{ p.desc }}</p>
+        </article>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section id="faq" aria-labelledby="faq-title" style="padding:clamp(48px,6vw,80px) 0;background:#FFFFFF">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:48px;align-items:start">
+    <div>
+      <h2 id="faq-title" style="margin:0 0 12px;font-size:clamp(26px,3vw,40px);font-weight:600;line-height:1.2;color:#001C33">Câu hỏi từ nhà thầu</h2>
+      <p style="margin:0;font-size:17px;color:#555E68">Một số chính sách đang chờ phê duyệt và sẽ được cập nhật khi chính thức áp dụng.</p>
+    </div>
+    <div style="border-top:1px solid #D1D1D1">
+      <sc-for list="{{ faqs }}" as="f" hint-placeholder-count="9">
+        <div style="border-bottom:1px solid #D1D1D1">
+          <button sc-camel-on-click="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width:100%;min-height:64px;display:flex;justify-content:space-between;align-items:center;gap:16px;background:none;border:none;padding:16px 0;text-align:left;font:inherit;font-size:17px;font-weight:600;color:#001C33;cursor:pointer">
+            <span>{{ f.q }}</span>
+            <span aria-hidden="true" style="font-size:24px;font-weight:400;line-height:1;flex-shrink:0">{{ f.sign }}</span>
+          </button>
+          <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0 0 20px;font-size:16px;line-height:1.55;color:#222222;max-width:640px">{{ f.a }}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- 9. REGISTRATION -->
+<section id="dang-ky" aria-labelledby="reg-title" style="padding:clamp(48px,6vw,80px) 0;background:#FFB51C">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(32px,5vw,64px);align-items:start">
+    <div style="display:flex;flex-direction:column;gap:16px;color:#001C33">
+      <h2 id="reg-title" style="margin:0;font-size:clamp(26px,3vw,40px);font-weight:600;line-height:1.2;text-wrap:balance">Đăng ký trở thành nhà thầu đối tác</h2>
+      <p style="margin:0;font-size:17px;line-height:1.55">Điền thông tin cơ bản, chuyên viên sẽ liên hệ để hướng dẫn nộp hồ sơ năng lực, giấy tờ pháp lý và dự án tiêu biểu.</p>
+      <ul style="margin:8px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:15px">
+        <li style="display:flex;gap:10px"><span style="width:6px;height:6px;margin-top:8px;background:#001C33;border-radius:999px;flex-shrink:0"></span>Không yêu cầu thanh toán trước khi xét duyệt</li>
+        <li style="display:flex;gap:10px"><span style="width:6px;height:6px;margin-top:8px;background:#001C33;border-radius:999px;flex-shrink:0"></span>Có thể lưu nháp và bổ sung hồ sơ sau</li>
+        <li style="display:flex;gap:10px"><span style="width:6px;height:6px;margin-top:8px;background:#001C33;border-radius:999px;flex-shrink:0"></span>Nhận mã hồ sơ để theo dõi tiến trình</li>
+      </ul>
+    </div>
+
+    <div style="background:#FFFFFF;border-radius:8px;padding:clamp(20px,3vw,32px);box-shadow:0 4px 4px rgba(0,0,0,.08),0 8px 12px rgba(0,0,0,.04)">
+      <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+        <div role="status" style="display:flex;flex-direction:column;gap:16px">
+          <span style="align-self:flex-start;font-size:12px;font-weight:600;color:#001C33;background:#F3F5F7;padding:4px 10px;border-radius:4px">ĐÃ GỬI HỒ SƠ</span>
+          <h3 style="margin:0;font-size:24px;font-weight:600;color:#001C33">Cảm ơn {{ form.company }}</h3>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:#222222">Hồ sơ của bạn đang ở trạng thái <strong>Đã gửi</strong>. Chuyên viên sẽ liên hệ qua số {{ form.phone }} để hướng dẫn bước tiếp theo.</p>
+          <div style="background:#F5F5F5;border-radius:4px;padding:16px">
+            <div style="font-size:13px;color:#555E68">Mã hồ sơ</div>
+            <div style="font-size:22px;font-weight:600;color:#001C33;letter-spacing:.04em">{{ refCode }}</div>
+          </div>
+          <button sc-camel-on-click="{{ reset }}" style="align-self:flex-start;min-height:48px;padding:0 20px;background:#FFFFFF;border:1px solid #D1D1D1;border-radius:4px;font:inherit;font-size:15px;font-weight:600;color:#001C33;cursor:pointer" style-hover="border-color:#001C33">Gửi hồ sơ khác</button>
+        </div>
+      </sc-if>
+      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+        <form sc-camel-on-submit="{{ submit }}" novalidate="" style="display:flex;flex-direction:column;gap:20px">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px">
+            <sc-for list="{{ fields }}" as="fd" hint-placeholder-count="5">
+              <label style="display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;color:#001C33">
+                <span>{{ fd.label }}</span>
+                <input type="{{ fd.type }}" name="{{ fd.key }}" value="{{ fd.value }}" sc-camel-on-change="{{ fd.onChange }}" placeholder="{{ fd.ph }}" aria-invalid="{{ fd.invalid }}" style="{{ fd.inputStyle }}">
+                <sc-if value="{{ fd.invalid }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px;font-weight:400;color:#B42318">{{ fd.error }}</span></sc-if>
+              </label>
+            </sc-for>
+          </div>
+          <fieldset style="border:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px">
+            <legend style="font-size:14px;font-weight:600;color:#001C33;margin-bottom:10px;padding:0">Hạng mục thi công chính</legend>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ serviceChips }}" as="c" hint-placeholder-count="6">
+                <button type="button" sc-camel-on-click="{{ c.toggle }}" aria-pressed="{{ c.on }}" style="{{ c.style }}">{{ c.label }}</button>
+              </sc-for>
+            </div>
+            <sc-if value="{{ servicesInvalid }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px;color:#B42318">Chọn ít nhất một hạng mục.</span></sc-if>
+          </fieldset>
+          <label style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#222222;cursor:pointer">
+            <input type="checkbox" checked="{{ form.consent }}" sc-camel-on-change="{{ toggleConsent }}" style="width:20px;height:20px;margin:1px 0 0;accent-color:#001C33;flex-shrink:0">
+            <span>Tôi đồng ý để Vua Thầu xử lý thông tin theo <a href="#top" style="text-decoration:underline">Chính sách bảo mật</a> và cam kết thông tin khai báo là chính xác.</span>
+          </label>
+          <sc-if value="{{ consentInvalid }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px;color:#B42318;margin-top:-12px">Cần đồng ý trước khi gửi.</span></sc-if>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+          <sc-if value="{{ hasSendError }}" hint-placeholder-val="{{ false }}"><span role="alert" style="font-size:14px;color:#B42318">{{ sendError }}</span></sc-if>
+          <button type="submit" disabled="{{ sending }}" style="min-height:56px;background:#001C33;color:#FFFFFF;border:none;border-radius:4px;font:inherit;font-size:17px;font-weight:600;cursor:pointer" style-hover="background:#0A3354">{{ submitLabel }}</button>
+          <p style="margin:0;font-size:13px;color:#555E68;text-align:center">Bước tiếp theo: bổ sung hồ sơ đầy đủ tại <a href="#dang-ky" style="text-decoration:underline">/doi-tac/dang-ky</a></p>
+        </form>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 10. FOOTER -->
+<footer style="background:#05243E;color:#D5DCE3">
+  <div style="max-width:1200px;margin:0 auto;padding:56px clamp(20px,4vw,56px) 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:40px">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <img src="/nha-thau/assets/fc7094f3.png" alt="Vua Thầu" style="width:126px;height:auto;display:block">
+      <p style="margin:0;font-size:14px;line-height:1.5">Chương trình nhà thầu đối tác Vua Thầu.</p>
+    </div>
+    <sc-for list="{{ footerCols }}" as="col" hint-placeholder-count="3">
+      <nav aria-label="{{ col.title }}" style="display:flex;flex-direction:column;gap:12px">
+        <h3 style="margin:0 0 4px;font-size:14px;font-weight:600;color:#FFFFFF;letter-spacing:.06em">{{ col.title }}</h3>
+        <sc-for list="{{ col.links }}" as="l" hint-placeholder-count="4">
+          <a href="{{ l.href }}" style="color:#D5DCE3;font-size:14px" style-hover="color:#FFB51C">{{ l.label }}</a>
+        </sc-for>
+      </nav>
+    </sc-for>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:20px clamp(20px,4vw,56px) 32px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px">
+    <span>© 2026 Vua Thầu. Thông tin pháp lý doanh nghiệp sẽ được cập nhật.</span>
+    <span style="display:flex;flex-wrap:wrap;gap:16px"><a href="tel:0931168749" style="color:inherit">Hotline: 0931 168 749</a><a href="mailto:alo@vuathau.com.vn" style="color:inherit">alo@vuathau.com.vn</a></span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="">
+class Component extends DCLogic {
+  state = { w: typeof window !== 'undefined' ? window.innerWidth : 1280, menuOpen: false, faqOpen: 0,
+    form: { company: '', rep: '', phone: '', email: '', region: '', services: [], consent: false },
+    tried: false, submitted: false, refCode: '', partners: null, sending: false, sendError: '' };
+  componentDidMount() { this._r = () => this.setState({ w: window.innerWidth }); window.addEventListener('resize', this._r);
+    fetch('/api/partners.php').then(r => r.ok ? r.json() : []).then(l => { if (Array.isArray(l) && l.length) this.setState({ partners: l.map(p => ({ ...p, ph: 'Công trình thực tế ' + p.name })) }); }).catch(() => {}); }
+  componentWillUnmount() { window.removeEventListener('resize', this._r); }
+  setField(k, v) { this.setState(s => ({ form: { ...s.form, [k]: v } })); }
+  errors() {
+    const f = this.state.form, e = {};
+    if (f.company.trim().length < 2) e.company = 'Nhập tên doanh nghiệp.';
+    if (f.rep.trim().length < 2) e.rep = 'Nhập tên người đại diện.';
+    if (!/^(0|\+84)\d{9,10}$/.test(f.phone.replace(/[\s.]/g, ''))) e.phone = 'Số điện thoại chưa hợp lệ.';
+    if (!/^\S+@\S+\.\S+$/.test(f.email)) e.email = 'Email chưa hợp lệ.';
+    if (f.region.trim().length < 2) e.region = 'Nhập ít nhất một tỉnh/thành.';
+    if (!f.services.length) e.services = 1;
+    if (!f.consent) e.consent = 1;
+    return e;
+  }
+  static IC = {"el":["M6 32h36v5H6zM10 32a14 14 0 0 1 28 0M20 19v-6h8v6","M24 42s12-11 12-21a12 12 0 0 0-24 0c0 10 12 21 12 21zM19.5 21a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0","M27 6H12v36h12M27 6l8 8v9M27 6v8h8M17 21h10M17 27h6M28 35a7 7 0 1 0 14 0a7 7 0 1 0 -14 0M32 35l2 2 4-4","M6 22L22 9l16 13M10 19v19h12M18 38V28h6M28 35a7 7 0 1 0 14 0a7 7 0 1 0 -14 0M32 35l2 2 4-4"],"be":["M17 9h-5v33h24V9h-5M18 5h12v7H18zM18 24l4 4 8-8M18 35h12","M8 20v9h6l16 9V11l-16 9zM14 29l3 10h5l-2-9M36 18a8 8 0 0 1 0 12","M13 6h22a2 2 0 0 1 2 2v32a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zM16 12h16v8H16zM17 27h3M23 27h3M29 27h3M17 34h3M23 34h3M29 34h3","M6 40h36M8 40V30h16v10M24 40V30h16v10M14 30V20h20v10"],"st":["M27 6H12v36h12M27 6l8 8v9M27 6v8h8M17 22h10M17 28h6M28 35a7 7 0 1 0 14 0a7 7 0 1 0 -14 0M32 35h6M35 32l3 3-3 3","M9 21a12 12 0 1 0 24 0a12 12 0 1 0 -24 0M30 30l11 11M16 21l4 4 7-7","M8 20v9h6l16 9V11l-16 9zM14 29l3 10h5l-2-9M36 18a8 8 0 0 1 0 12","M10 17a5 5 0 1 0 10 0a5 5 0 1 0 -10 0M28 17a5 5 0 1 0 10 0a5 5 0 1 0 -10 0M5 38a10 10 0 0 1 20 0M23 38a10 10 0 0 1 20 0","M24 6l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z","M8 26l10 10 22-22"],"pl":["M13 16a7 7 0 1 0 14 0a7 7 0 1 0 -14 0M6 40a14 14 0 0 1 28 0M38 18v10M33 23h10","M24 6l5 11 12 1-9 8 3 12-11-7-11 7 3-12-9-8 12-1z","M12 6h24v36H12zM18 14h12M18 21h12M18 28h6M27 35l3 3 5-6","M25 6h15v15L22 39 9 26zM29 14a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"]};
+  renderVals() {
+    const { w, form, tried } = this.state;
+    const wide = w >= 1100;
+    const err = tried ? this.errors() : {};
+    const cols = n => w >= 1100 ? `repeat(${n},minmax(0,1fr))` : w >= 640 ? 'repeat(2,minmax(0,1fr))' : '1fr';
+    const inputBase = 'height:48px;border-radius:4px;padding:0 12px;font:inherit;font-weight:400;font-size:15px;color:#222222;box-sizing:border-box;width:100%;';
+    const toStyle = css => Object.fromEntries(css.split(';').filter(Boolean).map(d => { const i = d.indexOf(':'); return [d.slice(0, i).trim().replace(/-([a-z])/g, (_, c) => c.toUpperCase()), d.slice(i + 1).trim()]; }));
+    const fieldDefs = [
+      ['company', 'Tên doanh nghiệp', 'text', 'Công ty TNHH Xây dựng …'],
+      ['rep', 'Người đại diện', 'text', 'Họ và tên'],
+      ['phone', 'Số điện thoại', 'tel', '09xx xxx xxx'],
+      ['email', 'Email', 'email', 'lienhe@congty.vn'],
+      ['region', 'Khu vực hoạt động', 'text', 'VD: TP. HCM, Bình Dương'],
+    ];
+    const statusBadge = live => toStyle('font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;' + (live ? 'background:#001C33;color:#FFFFFF' : 'background:#F3F5F7;color:#001C33;border:1px solid #D1D1D1'));
+    const faqsRaw = [
+      ['Điều kiện để trở thành đối tác là gì?', 'Doanh nghiệp có đăng ký kinh doanh ngành xây dựng, năng lực thi công nhà ở trọn vẹn và tối thiểu 2 dự án tiêu biểu có thể xác minh.'],
+      ['Vua Thầu xác minh nhà thầu như thế nào?', 'Chuyên viên kiểm tra giấy tờ pháp lý, chứng chỉ liên quan, dự án tiêu biểu và có thể khảo sát thực tế trước khi phê duyệt.'],
+      ['Có độc quyền theo khu vực không?', 'Chính sách độc quyền khu vực đang chờ phê duyệt và sẽ được thông báo trong thỏa thuận hợp tác.'],
+      ['Mỗi tháng tôi nhận được bao nhiêu yêu cầu?', 'Vua Thầu không cam kết số lượng. Yêu cầu được phân công dựa trên hạng mục, khu vực, quy mô và năng lực bạn khai báo.'],
+      ['Phí được tính như thế nào?', 'Mô hình phí (theo yêu cầu đạt chuẩn, hoa hồng thành công hoặc gói thuê bao) sẽ được trao đổi sau khi xét duyệt. Không thu phí trước khi duyệt hồ sơ.'],
+      ['Yêu cầu không hợp lệ được xử lý ra sao?', 'Bạn có thể báo cáo yêu cầu sai thông tin hoặc trùng lặp. Quy trình đối soát sẽ được quy định trong thỏa thuận.'],
+      ['Thông tin khách hàng được bảo vệ thế nào?', 'Bạn chỉ xem được thông tin liên hệ của khách hàng khi được phân công và khách hàng đã đồng ý chia sẻ.'],
+      ['Vua Thầu kiểm soát chất lượng công trình ra sao?', 'Kết quả và phản hồi thực tế từ khách hàng được ghi nhận để đánh giá đối tác trong các lần phân công sau.'],
+      ['Khi nào có thể dùng Dezon Pro và nguồn vật tư?', 'Các tính năng này đang được phát triển và sẽ mở cho đối tác khi tích hợp và thỏa thuận nhà cung cấp chính thức hoàn tất.'],
+    ];
+    return {
+      wide, narrow: !wide, menuOpen: this.state.menuOpen, showMobileMenu: !wide && this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      ctaShort: w < 480 ? 'Đăng ký' : 'Đăng ký đối tác',
+      fourCols: cols(4), threeCols: cols(3), twoCols: w >= 768 ? 'repeat(2,minmax(0,1fr))' : '1fr',
+      nav: [['Điều kiện', '#dieu-kien'], ['Quyền lợi', '#quyen-loi'], ['Quy trình', '#quy-trinh'], ['Chính sách', '#chinh-sach'], ['Hỏi đáp', '#faq'], ['Dành cho chủ nhà', '/']].map(([label, href]) => ({ label, href })),
+      eligibility: [
+        ['Năng lực thi công', 'Có đội ngũ và kinh nghiệm thi công trọn gói, phần thô, biệt thự, cải tạo hoặc hoàn thiện công trình.'],
+        ['Khu vực hoạt động rõ ràng', 'Chủ động nhận và quản lý công trình tại các tỉnh/thành bạn đăng ký.'],
+        ['Pháp lý minh bạch', 'Có đăng ký kinh doanh, mã số thuế và chứng chỉ hành nghề phù hợp.'],
+        ['Công trình thực tế', 'Có từ 2–5 công trình tiêu biểu đã hoàn thành, kèm hình ảnh và thông tin kiểm chứng được.'],
+      ].map(([title, desc], i) => ({ title, desc, no: '0' + (i + 1), icon: Component.IC.el[i] })),
+      benefits: [
+        ['Yêu cầu xây dựng đạt chuẩn', 'Nhận yêu cầu đã được xác nhận nhu cầu, phù hợp hạng mục, khu vực và quy mô bạn đăng ký.', 'Đang triển khai', true],
+        ['Quảng bá năng lực & dự án', 'Hồ sơ doanh nghiệp và dự án tiêu biểu hiển thị trong danh bạ nhà thầu sau khi được kiểm duyệt.', 'Đang triển khai', true],
+        ['Phần mềm dự toán Dezon Pro', 'Lập báo giá theo hạng mục ngay trên cổng đối tác; tích hợp dự toán Dezon Pro trong giai đoạn sau.', 'Sắp ra mắt', false],
+        ['Nguồn vật tư chất lượng có giá tốt nhất', 'Kết nối nhà cung cấp vật tư qua hệ sinh thái Dezon khi thỏa thuận chính thức được ký kết.', 'Sắp ra mắt', false],
+      ].map(([title, desc, status, live], i) => ({ title, desc, status, icon: Component.IC.be[i], no: '0' + (i + 1), slot: 'benefit-' + (i + 1), ph: 'Ảnh minh họa: ' + title, badgeStyle: statusBadge(live) })),
+      steps: [
+        ['Đăng ký hợp tác', 'Cung cấp thông tin doanh nghiệp, khu vực hoạt động và các công trình tiêu biểu.'],
+        ['Xác minh năng lực', 'Vua Thầu đánh giá hồ sơ, kinh nghiệm và trao đổi trực tiếp để hiểu rõ thế mạnh của bạn.'],
+        ['Ký kết & thiết lập hợp tác', 'Thống nhất chính sách, phạm vi hoạt động và hoàn thiện hồ sơ đối tác trên hệ thống.'],
+        ['Kết nối khách hàng', 'Nhận những yêu cầu phù hợp, tư vấn, gửi báo giá và phát triển cơ hội ký hợp đồng.'],
+      ].map(([title, desc], i) => ({ icon: Component.IC.st[i] || Component.IC.st[5], title, desc, no: '0' + (i + 1) })),
+      partners: this.state.partners || [
+        ['Kiến Phong', 'TP. HCM', 7, 8, ['Nhà phố', 'Biệt thự', 'Căn hộ'], 'kien-phong', 'https://dezon.vn/wp-content/uploads/dz-data/nt/kien-phong/ApoMbxpbgoLIAaxJt3cl2gFR.jpg'],
+        ['Smartcons Tech', 'TP. HCM', 8, 6, ['Nhà phố', 'Biệt thự', 'Căn hộ'], 'smartcons-tech', 'https://dezon.vn/wp-content/uploads/dz-data/nt/smartcons-tech/WqoJbgw4noOXCHxUQwklirM8.jpg'],
+        ['Huy Hoàng', 'TP. HCM', 6, 22, ['Nhà phố', 'Biệt thự', 'Công trình khác'], 'huy-hoang', 'https://dezon.vn/wp-content/uploads/dz-data/nt/huy-hoang/FYiUbfK4votN9Vxq41tlFLWC.jpg'],
+        ['Thiên Hưng', 'Hà Nội', 6, 7, ['Nhà phố', 'Biệt thự'], 'thien-hung', 'https://dezon.vn/wp-content/uploads/dz-data/nt/thien-hung/RPJQbHgSaoh9iNxkbBmldjwR.jpg'],
+        ['Hoàng Minh Phát', 'Hà Nội', 4, 9, ['Nhà phố', 'Biệt thự', 'Thương mại'], 'hoang-minh-phat', 'https://dezon.vn/wp-content/uploads/dz-data/nt/hoang-minh-phat/Ius1brOVVoZZd4xAEOVlrXIL.jpg'],
+        ['BIC', 'TP. HCM', 4, 10, ['Nhà phố', 'Biệt thự', 'Căn hộ'], 'bic', 'https://dezon.vn/wp-content/uploads/dz-data/nt/bic/W9TLbp8HrofxI8x3LNrlksF4.jpg'],
+        ['Kiến Thịnh', 'TP. HCM', 1, 14, ['Nhà phố', 'Biệt thự', 'Căn hộ'], 'kien-thinh', 'https://dezon.vn/wp-content/uploads/dz-data/nt/kien-thinh/Md4xbGv4goM3E2xnf68lUqKz.jpg'],
+        ['Huy Long', 'TP. HCM', 1, 3, ['Nhà phố', 'Biệt thự', 'Dự án'], 'huy-long', 'https://dezon.vn/wp-content/uploads/dz-data/nt/huy-long/QnKWbNRH7od3sfxWdLglWtIU.jpg'],
+      ].map(([name, city, projects, years, tags, slug, img]) => ({ name, city, projects, years, tags, img: img || '', slot: 'partner-' + slug, ph: 'Ảnh công trình: ' + name, href: 'https://dezon.vn/nha-thau/' + slug + '/' })),
+      plans: [
+        ['Thêm khách hàng tiềm năng', 'Tiếp cận những gia chủ đang có nhu cầu xây mới, cải tạo hoặc hoàn thiện công trình phù hợp với năng lực của bạn.'],
+        ['Phát triển thương hiệu', 'Được hỗ trợ giới thiệu doanh nghiệp, quảng bá công trình thực tế và tăng cơ hội tiếp cận khách hàng qua hệ thống marketing.'],
+        ['Báo giá chuyên nghiệp', 'Tiếp cận công cụ dự toán Dezon Pro, giúp chuẩn hóa khối lượng, quản lý báo giá và hỗ trợ tư vấn khách hàng.'],
+        ['Tối ưu chi phí vật tư', 'Có cơ hội tiếp cận mạng lưới nhà cung ứng và chính sách mua hàng dành cho đối tác trong hệ sinh thái Dezon.'],
+      ].map(([title, desc], i) => ({ icon: Component.IC.pl[i], title, desc })),
+      faqs: faqsRaw.map(([q, a], i) => { const open = this.state.faqOpen === i; return { q, a, open, sign: open ? '−' : '+', toggle: () => this.setState({ faqOpen: open ? -1 : i }) }; }),
+      form, submitted: this.state.submitted, notSubmitted: !this.state.submitted, refCode: this.state.refCode,
+      fields: fieldDefs.map(([key, label, type, ph]) => ({ key, label, type, ph, value: form[key], invalid: !!err[key], error: err[key] || '',
+        onChange: e => this.setField(key, e.target.value),
+        inputStyle: toStyle(inputBase + 'border:1px solid ' + (err[key] ? '#B42318' : '#D1D1D1')) })),
+      serviceChips: ['Xây nhà trọn gói', 'Xây biệt thự', 'Xây dựng phần thô', 'Cải tạo công trình', 'Hoàn thiện công trình', 'Thiết kế & xây dựng'].map(label => {
+        const on = form.services.includes(label);
+        return { label, on, toggle: () => this.setField('services', on ? form.services.filter(x => x !== label) : [...form.services, label]),
+          style: toStyle('min-height:44px;padding:0 16px;border-radius:999px;font:inherit;font-size:14px;font-weight:500;cursor:pointer;' + (on ? 'background:#001C33;color:#FFFFFF;border:1px solid #001C33' : 'background:#FFFFFF;color:#001C33;border:1px solid #D1D1D1')) };
+      }),
+      servicesInvalid: !!err.services, consentInvalid: !!err.consent,
+      toggleConsent: e => this.setField('consent', e.target.checked),
+      sending: this.state.sending, sendError: this.state.sendError, hasSendError: !!this.state.sendError,
+      submitLabel: this.state.sending ? 'Đang gửi…' : 'Gửi đăng ký',
+      submit: async e => { e.preventDefault(); if (this.state.sending) return; const errs = this.errors();
+        if (Object.keys(errs).length) { this.setState({ tried: true }); return; }
+        this.setState({ sending: true, sendError: '' });
+        try {
+          const r = await fetch('/api/register.php', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ...this.state.form, website: e.target.website ? e.target.website.value : '' }) });
+          const d = await r.json().catch(() => ({}));
+          if (!r.ok || !d.ok) throw new Error(d.error || 'Chưa gửi được, vui lòng thử lại.');
+          this.setState({ sending: false, submitted: true, refCode: d.ref });
+        } catch (err) { this.setState({ sending: false, sendError: err.message || 'Chưa gửi được, vui lòng thử lại.' }); } },
+      reset: () => this.setState({ submitted: false, tried: false, form: { company: '', rep: '', phone: '', email: '', region: '', services: [], consent: false } }),
+      footerCols: [
+        { title: 'ĐỐI TÁC', links: [['Điều kiện tham gia', '#dieu-kien'], ['Quyền lợi', '#quyen-loi'], ['Quy trình', '#quy-trinh'], ['Đăng ký', '#dang-ky']] },
+        { title: 'DÀNH CHO CHỦ NHÀ', links: [['Trang chủ', '/'], ['Dịch vụ', '/#dich-vu'], ['Dự án', '/#du-an'], ['Tìm nhà thầu', '/#nha-thau']] },
+        { title: 'CHÍNH SÁCH', links: [['Chính sách bảo mật', '#top'], ['Điều khoản sử dụng', '#top'], ['Liên hệ', '#top']] },
+      ].map(c => ({ title: c.title, links: c.links.map(([label, href]) => ({ label, href })) })),
+    };
+  }
+}
+</script>
+
+
+</body></html>
