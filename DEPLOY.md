@@ -55,6 +55,7 @@ ssh root@222.255.184.134 'git -C /opt/vuathau pull'
 PHP `mail()` → msmtp → Gmail SMTP (`deploy/msmtprc`, not in git). Needs a Google Workspace **App Password** for `support@dezon.vn`
 (or another Workspace account) — see `deploy/msmtprc.example`. Gmail sends From that account; the visitor's email is in Reply-To.
 Until it's set, forms show "Chưa gửi được, vui lòng gọi 0931 168 749…".
+After editing `msmtprc` run `docker restart vuathau-web`: it's a single-file bind mount, and editors/`sed -i` replace the file, so the running container keeps reading the old one.
 
 ## DNS (PA Việt Nam → "Cấu hình bản ghi tên miền")
 
