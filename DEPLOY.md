@@ -1,61 +1,69 @@
 # Deploy vuathau.com.vn
 
-Upload the **contents** of `site/` to the docroot. Needs **PHP ≥ 8.0** (with `dom`, `mbstring`) and a working `mail()` — no Node, no DB.
+## Layout
 
 ```
 site/
   index.html            → vuathau.com.vn/            Trang chủ (chủ nhà)
-  assets/
-  nha-thau/index.html   → vuathau.com.vn/nha-thau/   Trang đối tác (nhà thầu); menu "Dành cho nhà thầu" links here
-  nha-thau/assets/
-  api/partners.php      "Hồ sơ nhà thầu / Đối tác tiêu biểu" on both pages: top 8 from dezon.vn/nha-thau/tiem-nang/, cached 1h
-  api/lead.php          homepage form "Gửi nhu cầu xây nhà"  → email
-  api/register.php      /nha-thau form "Đăng ký đối tác"      → email
-  api/_lib.php          shared: recipients, sender, throttle, mail()
+  nha-thau/index.html   → vuathau.com.vn/nha-thau/   Trang đối tác (menu "Dành cho nhà thầu")
+  api/partners.php      partner cards on both pages: top 8 from dezon.vn/nha-thau/tiem-nang/, cached 1h
+  api/lead.php          homepage form "Gửi nhu cầu xây nhà" → email
+  api/register.php      /nha-thau form "Đăng ký đối tác"     → email
+  api/_lib.php          shared: recipients (TO), sender, throttle, mail()
+deploy/                 Docker (PHP 8.3 + Apache + msmtp) for the shared server
+tools/unbundle.py       unpack a Claude Design standalone export
 ```
 
-Recipients: `hungkts@decox.vn, support@dezon.vn` (`TO` in `api/_lib.php`). Sender: `no-reply@vuathau.com.vn`.
+Recipients: `hungkts@decox.vn, support@dezon.vn` (`TO` in `site/api/_lib.php`).
 
-If dezon.vn is down or changes its markup, the partner section falls back to the stale cache, then to the list hard-coded in the page.
+## Where it runs
 
-## Server (waiting on chị Lan's config)
+Shared Dezon server **222.255.184.134** (CloudFly, Ubuntu 24.04, SSH `root`, key `id_ed25519`), next to **QS Pro** (dezon.tech).
 
-1. DNS: `vuathau.com.vn` + `www` → A record to the Dezon server IP.
-2. New vhost, docroot = uploaded `site/` contents. Sample nginx (adjust the PHP-FPM socket):
-
-```nginx
-server {
-    server_name vuathau.com.vn www.vuathau.com.vn;
-    root /var/www/vuathau;
-    index index.html;
-    location / { try_files $uri $uri/ =404; }
-    location ~ /assets/ { expires 30d; add_header Cache-Control "public"; }
-    location = /api/_lib.php { deny all; }
-    location ~ ^/api/[a-z]+\.php$ {
-        include fastcgi_params;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        fastcgi_pass unix:/run/php/php8.2-fpm.sock;
-    }
-}
+```
+internet :80/:443 → qspro-web-1 (Caddy, /opt/qspro/infra/deploy/Caddyfile)
+                       ├─ dezon.tech, www.dezon.tech   → QS Pro
+                       └─ vuathau.com.vn, www.…        → vuathau-web:80  (this repo, /opt/vuathau)
 ```
 
-   On cPanel/DirectAdmin: add domain, upload into its `public_html`. Nothing else needed.
-3. SSL: Let's Encrypt (`certbot --nginx -d vuathau.com.vn -d www.vuathau.com.vn`, or AutoSSL in the panel).
-4. **Mail deliverability:** add an SPF record for `vuathau.com.vn` that authorises the server's IP (and DKIM if the panel offers it), or form emails will land in spam. If the server can't send mail directly, `mail()` must be pointed at an SMTP relay (msmtp / panel SMTP settings) — ask chị Lan which one Dezon uses.
+- QS Pro's Caddy owns 80/443 and HTTPS certificates. vuathau only adds a site block at the end of that Caddyfile:
 
-## Smoke test after go-live
+  ```caddy
+  vuathau.com.vn {
+  	encode zstd gzip
+  	reverse_proxy vuathau-web:80
+  }
+  www.vuathau.com.vn {
+  	redir https://vuathau.com.vn{uri} permanent
+  }
+  ```
 
-- `/` and `/nha-thau/` load, partner cards show real dezon.vn photos.
-- `curl https://vuathau.com.vn/api/partners.php` returns 8 items.
-- Submit each form once → both inboxes receive it (check spam).
+  **QS Pro deploys must keep this block** (tell whoever owns QS Pro's source; the server repo has no remote).
+- vuathau-web joins the `qspro_default` network (external) — nothing in QS Pro's compose file changes.
 
-## Re-importing a new design export
+## Update the site
 
 ```bash
-python3 -I tools/unbundle.py <exported.html> <out_dir> "<title>" "<description>"
+ssh root@222.255.184.134 'git -C /opt/vuathau pull'
 ```
 
-This only unpacks. The pages in `site/` carry hand edits on top (API wiring, `<img>` instead of `image-slot`, cross-page links, absolute `/…/assets/` paths), so after a re-import those edits must be re-applied.
+`site/` is mounted read-only, so no restart. After changing `deploy/Dockerfile` or `deploy/apache.conf`:
+`cd /opt/vuathau/deploy && docker compose up -d --build`.
+
+## Mail
+
+PHP `mail()` → msmtp → Gmail SMTP (`deploy/msmtprc`, not in git). Needs a Google Workspace **App Password** for `support@dezon.vn`
+(or another Workspace account) — see `deploy/msmtprc.example`. Gmail sends From that account; the visitor's email is in Reply-To.
+Until it's set, forms show "Chưa gửi được, vui lòng gọi 0931 168 749…".
+
+## DNS (PA Việt Nam → "Cấu hình bản ghi tên miền")
+
+| Type | Host | Value |
+|---|---|---|
+| A | `@` | 222.255.184.134 |
+| A | `www` | 222.255.184.134 |
+
+Keep PA's name servers. Caddy issues HTTPS automatically once DNS resolves.
 
 ## Known gaps (content, not code)
 
@@ -63,3 +71,8 @@ This only unpacks. The pages in `site/` carry hand edits on top (API wiring, `<i
 - Homepage FAQ still has a design note: "…Nội dung này chờ chủ sở hữu phê duyệt."
 - /nha-thau form footnote links to "/doi-tac/dang-ky" which doesn't exist.
 - No favicon / OG image.
+
+## Re-importing a new design export
+
+`python3 -I tools/unbundle.py <exported.html> <out_dir> "<title>" "<description>"` only unpacks. The pages in `site/` carry
+hand edits (API wiring, `<img>` instead of `image-slot`, cross-page links, absolute `/…/assets/` paths) that must be re-applied.

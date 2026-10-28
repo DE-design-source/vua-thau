@@ -1,0 +1,16 @@
+# SMTP for the form emails. On the server:
+#   cp msmtprc.example msmtprc && chown root:33 msmtprc && chmod 640 msmtprc   (33 = www-data in the container)
+# then put a Google Workspace App Password (myaccount.google.com > Security > App passwords) below.
+# Gmail sends From the account below; the visitor's address stays in Reply-To.
+defaults
+auth on
+tls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
+syslog off
+
+account default
+host smtp.gmail.com
+port 587
+from support@dezon.vn
+user support@dezon.vn
+password CHANGE_ME_APP_PASSWORD

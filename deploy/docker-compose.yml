@@ -1,0 +1,27 @@
+# vuathau.com.vn on the shared Dezon server (222.255.184.134), next to QS Pro.
+# Public traffic: QS Pro's Caddy (/opt/qspro/infra/deploy/Caddyfile) -> vuathau-web:80 over the qspro_default network.
+# Run from /opt/vuathau/deploy:
+#   docker compose up -d --build      # first time / after Dockerfile or apache.conf changes
+#   git -C /opt/vuathau pull          # site updates: no restart needed (site/ is mounted)
+name: vuathau
+
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: vuathau-web:latest
+    container_name: vuathau-web
+    restart: unless-stopped
+    volumes:
+      - ../site:/var/www/html:ro
+      - ./msmtprc:/etc/msmtprc:ro   # copy msmtprc.example, fill the SMTP app password
+    networks: [qspro]
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+
+networks:
+  qspro:
+    name: qspro_default
+    external: true
