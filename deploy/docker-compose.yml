@@ -1,5 +1,6 @@
-# vuathau.com.vn on the shared Dezon server (222.255.184.134), next to QS Pro.
-# Public traffic: QS Pro's Caddy (/opt/qspro/infra/deploy/Caddyfile) -> vuathau-web:80 over the qspro_default network.
+# vuathau.com.vn on the shared Dezon server (222.255.184.134), independent of QS Pro.
+# Public traffic: Cloudflare (proxied, SSL "Full") --Origin Rule port 8443--> vuathau-web:8443.
+# QS Pro's Caddy keeps 80/443; nothing here touches it.
 # Run from /opt/vuathau/deploy:
 #   docker compose up -d --build      # first time / after Dockerfile or apache.conf changes
 #   git -C /opt/vuathau pull          # site updates: no restart needed (site/ is mounted)
@@ -13,15 +14,11 @@ services:
     image: vuathau-web:latest
     container_name: vuathau-web
     restart: unless-stopped
+    ports:
+      - "8443:8443"   # Apache only answers Cloudflare IPs here (apache.conf)
     volumes:
       - ../site:/var/www/html:ro
-      - ./msmtprc:/etc/msmtprc:ro   # copy msmtprc.example, fill the SMTP app password
-    networks: [qspro]
+      - ./msmtprc:/etc/msmtprc:ro   # copy msmtprc.example, fill the SMTP app password; restart after edits
     logging:
       driver: json-file
       options: { max-size: "10m", max-file: "3" }
-
-networks:
-  qspro:
-    name: qspro_default
-    external: true

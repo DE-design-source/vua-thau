@@ -18,28 +18,20 @@ Recipients: `hungkts@decox.vn, support@dezon.vn` (`TO` in `site/api/_lib.php`).
 
 ## Where it runs
 
-Shared Dezon server **222.255.184.134** (CloudFly, Ubuntu 24.04, SSH `root`, key `id_ed25519`), next to **QS Pro** (dezon.tech).
+Shared Dezon server **222.255.184.134** (CloudFly, Ubuntu 24.04, SSH `root`, key `id_ed25519`), next to **QS Pro** (dezon.tech),
+fully independent of it: QS Pro's Caddy keeps ports 80/443, vuathau has its own port behind Cloudflare.
 
 ```
-internet :80/:443 → qspro-web-1 (Caddy, /opt/qspro/infra/deploy/Caddyfile)
-                       ├─ dezon.tech, www.dezon.tech   → QS Pro
-                       └─ vuathau.com.vn, www.…        → vuathau-web:80  (this repo, /opt/vuathau)
+visitor → Cloudflare (DNS + HTTPS, proxied) ──Origin Rule: port 8443──→ 222.255.184.134:8443 → vuathau-web (Apache, /opt/vuathau)
+visitor → dezon.tech → 222.255.184.134:443 → QS Pro Caddy (untouched)
 ```
 
-- QS Pro's Caddy owns 80/443 and HTTPS certificates. vuathau only adds a site block at the end of that Caddyfile:
-
-  ```caddy
-  vuathau.com.vn {
-  	encode zstd gzip
-  	reverse_proxy vuathau-web:80
-  }
-  www.vuathau.com.vn {
-  	redir https://vuathau.com.vn{uri} permanent
-  }
-  ```
-
-  **QS Pro deploys must keep this block** (tell whoever owns QS Pro's source; the server repo has no remote).
-- vuathau-web joins the `qspro_default` network (external) — nothing in QS Pro's compose file changes.
+Cloudflare settings for vuathau.com.vn:
+- DNS: `A @` and `A www` → 222.255.184.134, **Proxied** (orange). Mail records (`mail`, `mx`, `dkim._domainkey` CNAMEs, MX, SPF/DMARC TXT) **DNS only** (grey).
+- SSL/TLS mode **Full** (origin has a self-signed cert). Always Use HTTPS on.
+- Rules → Origin Rules: hostname is `vuathau.com.vn` or `www.vuathau.com.vn` → destination port **8443**.
+- Apache on :8443 only answers Cloudflare IPs (`deploy/apache.conf`), so the port can't be used to bypass Cloudflare.
+- Registrar PA Việt Nam: name servers = the two Cloudflare ones; DNSSEC at PA must be off (or re-enabled via Cloudflare's DS record).
 
 ## Update the site
 
@@ -56,15 +48,6 @@ PHP `mail()` → msmtp → Gmail SMTP (`deploy/msmtprc`, not in git). Needs a Go
 (or another Workspace account) — see `deploy/msmtprc.example`. Gmail sends From that account; the visitor's email is in Reply-To.
 Until it's set, forms show "Chưa gửi được, vui lòng gọi 0931 168 749…".
 After editing `msmtprc` run `docker restart vuathau-web`: it's a single-file bind mount, and editors/`sed -i` replace the file, so the running container keeps reading the old one.
-
-## DNS (PA Việt Nam → "Cấu hình bản ghi tên miền")
-
-| Type | Host | Value |
-|---|---|---|
-| A | `@` | 222.255.184.134 |
-| A | `www` | 222.255.184.134 |
-
-Keep PA's name servers. Caddy issues HTTPS automatically once DNS resolves.
 
 ## Known gaps (content, not code)
 
